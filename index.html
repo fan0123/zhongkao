@@ -2,1619 +2,1437 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>2026自贡中考·职高全攻略（男生版）</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>自贡职高全景选校报告 · 2026届中考版</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:"Microsoft YaHei",PingFang SC,Arial,sans-serif;background:#f5f7fa;color:#1e293b;overflow-x:hidden}
 :root{
-  --primary:#2563eb;--secondary:#7c3aed;--success:#059669;--warning:#d97706;
-  --danger:#dc2626;--info:#0891b2;--orange:#ea580c;
-  --bg:#f5f7fa;--card:#fff;--border:#e2e8f0;--text:#1e293b;--muted:#64748b;
+  --primary:#2563eb;--primary-light:#eff6ff;--primary-border:#bfdbfe;
+  --green:#16a34a;--green-light:#f0fdf4;--green-border:#bbf7d0;
+  --orange:#ea580c;--orange-light:#fff7ed;--orange-border:#fed7aa;
+  --red:#dc2626;--red-light:#fef2f2;--red-border:#fecaca;
+  --purple:#7c3aed;--purple-light:#f5f3ff;--purple-border:#ddd6fe;
+  --yellow:#d97706;--yellow-light:#fffbeb;--yellow-border:#fde68a;
+  --gray:#64748b;--bg:#f1f5f9;--surface:#fff;--border:#e2e8f0;
+  --text:#1e293b;--text2:#475569;--text3:#94a3b8;
+  --radius:14px;--shadow:0 2px 16px rgba(0,0,0,.08);
 }
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.6}
 
-/* salary disclaimer */
-.salary-source-note{font-size:11px;color:#94a3b8;display:block;margin-top:2px}
-.mc-val.salary small{font-size:10px;color:#94a3b8;display:block;line-height:1.4;margin-top:2px}
-/* HERO */
-.hero{background:linear-gradient(135deg,#1d4ed8 0%,#7c3aed 55%,#0891b2 100%);padding:56px 20px 44px;text-align:center;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;inset:0;opacity:.04;background-image:radial-gradient(circle,#fff 1px,transparent 1px);background-size:28px 28px}
-.hero-inner{position:relative;z-index:1}
-.hero h1{font-size:clamp(22px,5vw,44px);font-weight:900;color:#fff;margin-bottom:10px;text-shadow:0 2px 8px rgba(0,0,0,.2)}
-.hero .sub{font-size:clamp(13px,2.5vw,17px);color:rgba(255,255,255,.88);margin-bottom:20px}
-.hero-badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.hbadge{background:rgba(255,255,255,.18);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:5px 14px;font-size:13px;color:#fff;font-weight:600}
-.hbadge.y{background:rgba(251,191,36,.22);border-color:#fbbf24;color:#fef3c7}
-.hbadge.g{background:rgba(16,185,129,.22);border-color:#10b981;color:#d1fae5}
-/* LAYOUT */
-.container{max-width:1200px;margin:0 auto;padding:0 16px}
-.section{padding:36px 0}
-.section-title{font-size:clamp(18px,3.5vw,28px);font-weight:800;color:var(--text);margin-bottom:6px;display:flex;align-items:center;gap:10px}
-.section-desc{color:var(--muted);font-size:14px;margin-bottom:24px}
-/* ALERT */
-.alert{border-radius:14px;padding:18px 20px;margin-bottom:22px;display:flex;gap:14px;align-items:flex-start}
-.alert-icon{font-size:22px;flex-shrink:0;margin-top:1px}
-.alert-body h4{font-size:15px;font-weight:700;margin-bottom:4px}
-.alert-body p{font-size:14px;line-height:1.7}
-.alert.w{background:#fffbeb;border:1px solid #fcd34d}.alert.w .alert-body h4{color:#92400e}
-.alert.i{background:#eff6ff;border:1px solid #93c5fd}.alert.i .alert-body h4{color:#1e40af}
-.alert.s{background:#f0fdf4;border:1px solid #86efac}.alert.s .alert-body h4{color:#14532d}
-/* SCORE */
-.score-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:22px}
-.score-card{background:#fff;border-radius:14px;padding:18px;border:1px solid var(--border);box-shadow:0 1px 5px rgba(0,0,0,.05);text-align:center}
-.score-card .sc-label{font-size:12px;color:var(--muted);margin-bottom:5px}
-.score-card .sc-num{font-size:38px;font-weight:900;line-height:1.1}
-.score-card .sc-sub{font-size:12px;color:var(--muted);margin-top:4px}
-.score-card.b{border-top:4px solid var(--primary)}.score-card.b .sc-num{color:var(--primary)}
-.score-card.g{border-top:4px solid var(--success)}.score-card.g .sc-num{color:var(--success)}
-.score-card.r{border-top:4px solid var(--danger)}.score-card.r .sc-num{color:var(--danger)}
-.score-card.o{border-top:4px solid var(--orange)}.score-card.o .sc-num{color:var(--orange)}
-/* PROGRESS */
-.pb-section{background:#fff;border-radius:14px;padding:22px;border:1px solid var(--border);box-shadow:0 1px 5px rgba(0,0,0,.05);margin-bottom:18px}
-.pb-section h4{font-size:15px;font-weight:700;margin-bottom:16px}
-.pb-row{margin-bottom:12px}
-.pb-label{display:flex;justify-content:space-between;font-size:13px;font-weight:600;margin-bottom:4px}
-.pb-track{height:18px;background:#f1f5f9;border-radius:9px;overflow:hidden}
-.pb-fill{height:100%;border-radius:9px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-size:11px;color:#fff;font-weight:700}
-/* HS */
-.hs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-bottom:20px}
-.hs-card{background:#fff;border-radius:14px;padding:18px;border:1px solid var(--border);border-left:5px solid var(--primary);box-shadow:0 1px 5px rgba(0,0,0,.05);transition:transform .2s}
-.hs-card:hover{transform:translateY(-3px)}
-.hs-name{font-size:15px;font-weight:800;margin-bottom:4px}
-.hs-score{font-size:30px;font-weight:900;color:var(--primary);line-height:1.1;margin-bottom:4px}
-.chip-h{background:#fef2f2;color:#dc2626;border:1px solid #fca5a5;padding:3px 9px;border-radius:9px;font-size:12px;font-weight:700}
-.chip-m{background:#fffbeb;color:#d97706;border:1px solid #fcd34d;padding:3px 9px;border-radius:9px;font-size:12px;font-weight:700}
-.hs-type{font-size:12px;color:var(--muted);margin-top:6px}
-/* SPRINT */
-.sprint-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-bottom:20px}
-.sprint-card{background:#fff;border-radius:14px;padding:18px;border:1px solid var(--border);box-shadow:0 1px 5px rgba(0,0,0,.05)}
-.sprint-card .sp-subj{font-size:15px;font-weight:800;margin-bottom:2px}
-.sprint-card .sp-gain{font-size:28px;font-weight:900;color:var(--success);margin-bottom:6px}
-.sprint-card .sp-gain span{font-size:13px;color:var(--muted)}
-.sprint-card li{font-size:13px;color:var(--muted);list-style:none;padding-left:15px;position:relative;margin-bottom:2px;line-height:1.7}
-.sprint-card li::before{content:"→";position:absolute;left:0;color:var(--primary)}
-/* FILTER */
-.filter-wrap{background:#fff;border-radius:16px;padding:22px;border:1px solid var(--border);box-shadow:0 1px 6px rgba(0,0,0,.05);margin-bottom:22px}
-.filter-wrap h3{font-size:16px;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:8px;color:var(--text)}
-.f-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;align-items:center}
-.f-row label{font-size:13px;font-weight:600;color:var(--muted);min-width:72px}
-.fi{border:1px solid var(--border);background:#f8fafc;border-radius:8px;padding:7px 12px;font-size:13px;color:var(--text);outline:none;transition:border-color .2s}
-.fi:focus{border-color:var(--primary)}
-.tg{display:flex;flex-wrap:wrap;gap:7px}
-.tag{border:1px solid var(--border);background:#f8fafc;border-radius:16px;padding:4px 13px;font-size:13px;cursor:pointer;color:var(--muted);transition:all .2s;user-select:none}
-.tag.active{background:var(--primary);border-color:var(--primary);color:#fff;font-weight:600}
-.tag:hover:not(.active){border-color:var(--primary);color:var(--primary)}
-.fbtn{border:none;border-radius:8px;padding:8px 18px;font-size:13px;font-weight:700;cursor:pointer;transition:opacity .2s}
-.fbtn.p{background:var(--primary);color:#fff}.fbtn.p:hover{opacity:.85}
-.fbtn.r{background:#f1f5f9;color:var(--muted);border:1px solid var(--border)}.fbtn.r:hover{background:#e2e8f0}
-/* SCHOOL CARDS */
-.schools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:18px}
-.sc-card{background:#fff;border-radius:18px;border:1px solid var(--border);box-shadow:0 2px 10px rgba(0,0,0,.07);overflow:hidden;transition:transform .25s,box-shadow .25s}
-.sc-card:hover{transform:translateY(-5px);box-shadow:0 14px 36px rgba(37,99,235,.13)}
-.sc-card.hidden{display:none}
-.sc-top{padding:16px 18px 12px;display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid var(--border)}
-.sc-rank{font-size:11px;color:var(--muted);margin-bottom:3px}
-.sc-name{font-size:17px;font-weight:900;color:var(--text);margin-bottom:3px}
-.sc-loc{font-size:12px;color:var(--muted)}
-.sc-badge{padding:4px 11px;border-radius:12px;font-size:12px;font-weight:700;white-space:nowrap}
-.public{background:#ecfdf5;color:#059669;border:1px solid #86efac}
-.private{background:#fef3c7;color:#d97706;border:1px solid #fcd34d}
-.sc-info{padding:10px 18px}
-.si-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid #f8fafc;font-size:13px}
-.si-row:last-child{border-bottom:none}
-.si-label{color:var(--muted)}
-.si-val{font-weight:700}
-.si-val.g{color:var(--success)}.si-val.r{color:var(--danger)}.si-val.b{color:var(--primary)}.si-val.o{color:var(--orange)}.si-val.p{color:var(--secondary)}.si-val.star{color:#f59e0b}
-/* MAJORS */
-.majors-section{border-top:1px solid var(--border)}
-.majors-toggle{width:100%;background:#f8fafc;border:none;padding:11px 18px;text-align:left;font-size:13px;font-weight:700;color:var(--primary);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .2s}
-.majors-toggle:hover{background:#eff6ff}
-.arrow{transition:transform .3s;font-size:12px;color:var(--muted)}
-.majors-toggle.open .arrow{transform:rotate(180deg)}
-.majors-content{display:none;padding:14px 18px 16px;background:#fafbfc}
+/* ===== HERO ===== */
+.hero{background:linear-gradient(135deg,#1e3a8a 0%,#1d4ed8 50%,#2563eb 100%);color:#fff;padding:48px 20px 40px}
+.hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.hero h1{font-size:28px;font-weight:800;margin:14px 0 10px;line-height:1.3}
+.hero p{font-size:15px;opacity:.85;margin-bottom:16px}
+.hbadge{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:4px 12px;font-size:12px;margin:3px}
+.hero-tags{margin-bottom:8px}
+
+/* ===== CONTAINER ===== */
+.wrap{max-width:900px;margin:0 auto;padding:0 16px}
+
+/* ===== ALERT ===== */
+.alert{background:var(--yellow-light);border:1.5px solid var(--yellow-border);border-radius:var(--radius);padding:16px 18px;margin:24px 0;display:flex;gap:12px;align-items:flex-start}
+.alert-icon{font-size:22px;flex-shrink:0;margin-top:2px}
+.alert h4{font-size:15px;font-weight:700;color:#92400e;margin-bottom:4px}
+.alert p{font-size:13px;color:#78350f;line-height:1.6}
+.alert.blue{background:var(--primary-light);border-color:var(--primary-border)}
+.alert.blue h4{color:#1e40af}
+.alert.blue p{color:#1e3a8a}
+.alert.red{background:var(--red-light);border-color:var(--red-border)}
+.alert.red h4{color:#991b1b}
+.alert.red p{color:#7f1d1d}
+
+/* ===== SECTION ===== */
+.section{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px 22px;margin-bottom:20px}
+.sec-title{font-size:19px;font-weight:800;color:var(--text);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.sec-desc{font-size:13px;color:var(--text3);margin-bottom:18px;border-bottom:1px solid var(--border);padding-bottom:14px}
+
+/* ===== 分数卡片 ===== */
+.score-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-bottom:18px}
+.sc-box{border-radius:12px;padding:16px;text-align:center}
+.sc-box.blue{background:var(--primary-light);border:1.5px solid var(--primary-border)}
+.sc-box.green{background:var(--green-light);border:1.5px solid var(--green-border)}
+.sc-box.red{background:var(--red-light);border:1.5px solid var(--red-border)}
+.sc-box.orange{background:var(--orange-light);border:1.5px solid var(--orange-border)}
+.sc-box .label{font-size:12px;color:var(--text3);margin-bottom:4px}
+.sc-box .num{font-size:32px;font-weight:800;line-height:1.1}
+.sc-box.blue .num{color:var(--primary)}
+.sc-box.green .num{color:var(--green)}
+.sc-box.red .num{color:var(--red)}
+.sc-box.orange .num{color:var(--orange)}
+.sc-box .sub{font-size:11px;color:var(--text3);margin-top:4px}
+
+/* ===== 分数线表格 ===== */
+.score-table{width:100%;border-collapse:collapse;font-size:13px}
+.score-table th{background:#f8fafc;font-weight:700;padding:9px 12px;text-align:left;border-bottom:2px solid var(--border);color:var(--text2)}
+.score-table td{padding:8px 12px;border-bottom:1px solid var(--border);color:var(--text)}
+.score-table tr:hover td{background:#f8fafc}
+.badge-tier{display:inline-block;border-radius:6px;padding:2px 8px;font-size:11px;font-weight:700}
+.tier1{background:#fef3c7;color:#92400e}
+.tier2{background:#d1fae5;color:#065f46}
+.tier3{background:#dbeafe;color:#1e40af}
+.tier4{background:#f3f4f6;color:#374151}
+.hl-green{color:var(--green);font-weight:700}
+.hl-orange{color:var(--orange);font-weight:700}
+.hl-red{color:var(--red);font-weight:700}
+
+/* ===== 冲刺卡片 ===== */
+.boost-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin:16px 0}
+.boost-card{border-radius:12px;padding:16px;border:2px solid}
+.boost-card.m{background:#eff6ff;border-color:#93c5fd}
+.boost-card.c{background:#fdf4ff;border-color:#d8b4fe}
+.boost-card.e{background:#f0fdf4;border-color:#86efac}
+.boost-card.s{background:#fff7ed;border-color:#fdba74}
+.boost-card .bh{font-size:14px;font-weight:700;margin-bottom:4px}
+.boost-card .bsc{font-size:26px;font-weight:800;color:var(--green)}
+.boost-card .bi{font-size:12px;color:var(--text2);margin-top:6px}
+.boost-card .bi li{margin-bottom:2px;list-style:none;padding-left:0}
+.boost-card .bi li::before{content:"→ ";color:var(--primary)}
+
+/* ===== 筛选器 ===== */
+.filter-wrap{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 22px;margin-bottom:20px}
+.filter-title{font-size:15px;font-weight:700;color:var(--text);margin-bottom:14px}
+.filter-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:12px}
+.filter-label{font-size:13px;color:var(--text2);width:60px;flex-shrink:0}
+.tag{background:#f1f5f9;border:1.5px solid var(--border);border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;transition:.15s}
+.tag:hover{background:var(--primary-light);border-color:var(--primary-border)}
+.tag.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.filter-row input{border:1.5px solid var(--border);border-radius:8px;padding:6px 10px;font-size:13px;width:80px;color:var(--text)}
+.filter-row input:focus{outline:none;border-color:var(--primary)}
+.btn-apply{background:var(--primary);color:#fff;border:none;border-radius:8px;padding:8px 20px;font-size:13px;cursor:pointer;font-weight:600}
+.btn-apply:hover{background:#1d4ed8}
+.btn-reset{background:#f1f5f9;color:var(--text2);border:1.5px solid var(--border);border-radius:8px;padding:8px 16px;font-size:13px;cursor:pointer}
+.filter-result{font-size:13px;color:var(--gray);margin-top:10px;min-height:18px}
+
+/* ===== 学校卡片 ===== */
+.school-grid{display:grid;gap:16px}
+.sch-card{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;transition:.2s}
+.sch-card.hidden{display:none}
+.sch-top{display:flex;align-items:flex-start;justify-content:space-between;padding:18px 18px 12px}
+.sch-left .rank-tag{font-size:11px;color:var(--primary);font-weight:600;margin-bottom:4px}
+.sch-left .name{font-size:17px;font-weight:800;color:var(--text);margin-bottom:3px}
+.sch-left .loc{font-size:12px;color:var(--text3)}
+.sch-badge{border-radius:20px;padding:4px 12px;font-size:12px;font-weight:600}
+.sch-badge.pub{background:var(--green-light);color:#065f46;border:1px solid var(--green-border)}
+.sch-badge.prv{background:var(--orange-light);color:#9a3412;border:1px solid var(--orange-border)}
+.sch-info{padding:0 18px 12px;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.si-row{display:flex;gap:8px;font-size:13px;padding:4px 0}
+.si-label{color:var(--text3);flex-shrink:0;width:72px}
+.si-val{color:var(--text);font-weight:500}
+.si-val.green{color:var(--green)}
+.si-val.orange{color:var(--orange)}
+.si-val.blue{color:var(--primary)}
+/* 专业详情区 */
+.majors-wrap{border-top:1px solid var(--border);margin:0 18px 0;padding:0}
+.majors-btn{width:100%;display:flex;align-items:center;justify-content:space-between;background:none;border:none;padding:13px 0;font-size:13px;font-weight:600;color:var(--primary);cursor:pointer;text-align:left}
+.majors-btn .arrow{transition:.25s;font-size:11px}
+.majors-btn.open .arrow{transform:rotate(180deg)}
+.majors-content{display:none;padding-bottom:12px}
 .majors-content.show{display:block}
-.major-item{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:10px}
-.major-item:last-child{margin-bottom:0}
-.mj-header{display:flex;align-items:center;gap:8px;margin-bottom:6px}
-.mj-name{font-size:14px;font-weight:800;color:var(--text)}
-.mj-tag{padding:2px 9px;border-radius:10px;font-size:11px;font-weight:700}
-.mj-tag.ai{background:#ede9fe;color:#7c3aed;border:1px solid #c4b5fd}
-.mj-tag.tech{background:#eff6ff;color:#1d4ed8;border:1px solid #93c5fd}
-.mj-tag.trade{background:#fefce8;color:#a16207;border:1px solid #fef08a}
-.mj-tag.service{background:#ecfdf5;color:#065f46;border:1px solid #6ee7b7}
-.mj-jobs{font-size:12px;color:var(--muted);margin-bottom:8px}
-.mj-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.mj-cell{background:#f8fafc;border-radius:8px;padding:8px 10px;border:1px solid var(--border)}
-.mc-label{font-size:11px;color:var(--muted);margin-bottom:2px}
-.mc-val{font-size:13px;font-weight:700;color:var(--text)}
-.mc-val.salary{color:var(--success)}
-.sc-footer{padding:10px 18px;background:#f8fafc;display:flex;gap:8px;border-top:1px solid var(--border)}
-.sc-btn{flex:1;padding:8px;border-radius:8px;border:none;font-size:13px;font-weight:700;cursor:pointer;transition:opacity .2s}
-.sc-btn:hover{opacity:.8}
-.btn-p{background:var(--primary);color:#fff}
-.btn-s{background:#fff;color:var(--muted);border:1px solid var(--border)!important}
-/* MAP */
-.map-wrap{background:#fff;border-radius:16px;padding:22px;border:1px solid var(--border);box-shadow:0 1px 6px rgba(0,0,0,.05);margin-bottom:18px}
-.map-title{font-size:16px;font-weight:800;margin-bottom:16px;display:flex;align-items:center;gap:8px}
-.district-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:12px}
-.dc{border-radius:12px;padding:14px;text-align:center;cursor:pointer;transition:all .2s;border:2px solid transparent}
-.dc:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.1)}
-.dc.sel{box-shadow:0 4px 20px rgba(37,99,235,.25);border-color:var(--primary)!important}
-.dc-name{font-size:14px;font-weight:800;margin-bottom:4px}
-.dc-count{font-size:22px;font-weight:900}
-.dc-schools{font-size:11px;margin-top:4px;opacity:.75;line-height:1.5}
-.dc-bl{background:#eff6ff;border-color:#bfdbfe!important}.dc-bl .dc-name,.dc-bl .dc-count{color:#1d4ed8}
-.dc-gr{background:#ecfdf5;border-color:#bbf7d0!important}.dc-gr .dc-name,.dc-gr .dc-count{color:#059669}
-.dc-or{background:#fff7ed;border-color:#fed7aa!important}.dc-or .dc-name,.dc-or .dc-count{color:#c2410c}
-.dc-pu{background:#faf5ff;border-color:#e9d5ff!important}.dc-pu .dc-name,.dc-pu .dc-count{color:#7c3aed}
-.dc-ye{background:#fefce8;border-color:#fef08a!important}.dc-ye .dc-name,.dc-ye .dc-count{color:#a16207}
-.dc-re{background:#fef2f2;border-color:#fecaca!important}.dc-re .dc-name,.dc-re .dc-count{color:#dc2626}
-.map-hint{text-align:center;font-size:12px;color:var(--muted);margin-top:6px}
-/* TABLE */
-.tbl-wrap{overflow-x:auto;border-radius:14px;border:1px solid var(--border);box-shadow:0 1px 6px rgba(0,0,0,.05);background:#fff}
-table{width:100%;border-collapse:collapse;min-width:780px}
-thead th{background:#f8fafc;padding:12px 14px;font-size:13px;font-weight:700;color:var(--muted);text-align:left;border-bottom:2px solid var(--border)}
-tbody td{padding:10px 14px;font-size:13px;color:var(--text);border-bottom:1px solid #f1f5f9}
-tbody tr:hover td{background:#eff6ff}
-tbody tr:last-child td{border-bottom:none}
-.chip{display:inline-block;padding:2px 9px;border-radius:9px;font-size:12px;font-weight:700}
-.chip-free{background:#ecfdf5;color:#059669;border:1px solid #86efac}
-.chip-high{background:#fef2f2;color:#dc2626;border:1px solid #fca5a5}
-/* AI PATH */
-.ai-paths{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-bottom:22px}
-.apc{background:#fff;border-radius:14px;padding:18px;border:1px solid var(--border);box-shadow:0 1px 5px rgba(0,0,0,.05);border-top:4px solid var(--primary)}
-.apc.t-pu{border-top-color:var(--secondary)}.apc.t-gr{border-top-color:var(--success)}.apc.t-or{border-top-color:var(--orange)}
-.apc-icon{font-size:26px;margin-bottom:8px}
-.apc-title{font-size:15px;font-weight:800;margin-bottom:5px}
-.apc-path{font-size:12px;color:var(--muted);line-height:1.8;margin-bottom:8px}
-.apc-salary{font-size:13px;font-weight:700;color:var(--success);background:#f0fdf4;border-radius:8px;padding:5px 10px;display:inline-block}
-/* TIMELINE */
-.tl{padding-left:26px;position:relative;margin-bottom:22px}
-.tl::before{content:"";position:absolute;left:7px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--primary),var(--secondary))}
-.tl-item{position:relative;padding:0 0 20px 18px}
-.tl-item::before{content:"";position:absolute;left:-21px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--primary);border:3px solid #fff;box-shadow:0 0 0 2px var(--primary)}
-.tl-item.t2::before{background:var(--secondary);box-shadow:0 0 0 2px var(--secondary)}
-.tl-item.t3::before{background:var(--warning);box-shadow:0 0 0 2px var(--warning)}
-.tl-item.t4::before{background:var(--success);box-shadow:0 0 0 2px var(--success)}
-.tl-lbl{font-size:11px;color:var(--muted);font-weight:600;margin-bottom:3px}
-.tl-title{font-size:15px;font-weight:800;margin-bottom:4px}
-.tl-desc{font-size:13px;color:var(--muted);line-height:1.7}
-/* MOTIVATION */
-.motivation{background:linear-gradient(135deg,#1d4ed8,#7c3aed);border-radius:20px;padding:36px 30px;text-align:center;color:#fff;margin-bottom:20px;position:relative;overflow:hidden}
-.motivation::before{content:"";position:absolute;inset:0;opacity:.04;background-image:radial-gradient(circle,#fff 1px,transparent 1px);background-size:24px 24px}
-.motivation>*{position:relative}
-.motivation h2{font-size:clamp(20px,4vw,32px);font-weight:900;margin-bottom:10px;text-shadow:0 2px 10px rgba(0,0,0,.2)}
-.motivation .mq{font-size:clamp(14px,2.5vw,16px);opacity:.92;line-height:1.8;max-width:780px;margin:0 auto 22px}
-.mot-stats{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:22px}
-.mot-stat{background:rgba(255,255,255,.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:14px 20px;min-width:130px}
-.mot-stat .ms-num{font-size:24px;font-weight:900;color:#fbbf24}
-.mot-stat .ms-desc{font-size:12px;opacity:.85;margin-top:2px}
-.mot-warn{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:16px 20px;text-align:left;max-width:680px;margin:0 auto}
-.mot-warn li{font-size:13px;padding:5px 0;padding-left:22px;position:relative;opacity:.92}
-.mot-warn li::before{content:"⚠️";position:absolute;left:0;font-size:12px;top:6px}
-.mot-quote{margin:18px auto 0;padding:14px 18px;background:rgba(251,191,36,.15);border:1px solid rgba(251,191,36,.35);border-radius:12px;font-size:14px;font-style:italic;color:#fef3c7;max-width:680px}
-/* OTHER */
-.other-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin-bottom:18px}
-.oc{background:#fff;border-radius:14px;padding:18px;border:1px solid var(--border);box-shadow:0 1px 5px rgba(0,0,0,.05);transition:transform .2s}
-.oc:hover{transform:translateY(-3px)}
-.oc-icon{font-size:26px;margin-bottom:8px}
-.oc-title{font-size:15px;font-weight:800;margin-bottom:5px}
-.oc-desc{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:8px}
-.oc-tag{display:inline-block;padding:3px 10px;border-radius:10px;font-size:12px;font-weight:600;background:#eff6ff;color:var(--primary);border:1px solid #bfdbfe}
-/* SUMMARY */
-.sum-wrap{background:#fff;border-radius:16px;padding:22px;border:1px solid var(--border);box-shadow:0 1px 6px rgba(0,0,0,.05);margin-bottom:22px}
-.sum-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin-bottom:20px}
-.sum-item{background:#f8fafc;border-radius:12px;padding:14px;text-align:center;border:1px solid var(--border)}
-.sum-item .si2-icon{font-size:22px;margin-bottom:6px}
-.sum-item .si2-title{font-size:12px;color:var(--muted);margin-bottom:3px}
-.sum-item .si2-val{font-size:18px;font-weight:900;color:var(--primary)}
-.action-list{background:#f8fafc;border-radius:12px;padding:18px;border:1px solid var(--border)}
-.action-list h4{font-size:15px;font-weight:800;margin-bottom:12px;display:flex;align-items:center;gap:8px}
-.al-item{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text)}
-.al-item:last-child{border-bottom:none}
-.al-num{width:24px;height:24px;border-radius:50%;background:var(--primary);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-footer{background:#1e293b;color:#94a3b8;text-align:center;padding:28px 20px;font-size:13px;line-height:2.1}
-@media(max-width:640px){
-  .schools-grid,.hs-grid,.sprint-grid,.district-grid,.ai-paths,.other-grid,.sum-grid{grid-template-columns:1fr!important}
-  .district-grid{grid-template-columns:repeat(2,1fr)!important}
-  .mj-row{grid-template-columns:1fr!important}
-  .f-row{flex-direction:column;align-items:flex-start}
-  .score-grid{grid-template-columns:repeat(2,1fr)}
+.data-src{background:var(--primary-light);border:1px solid var(--primary-border);border-radius:8px;padding:6px 12px;font-size:11px;color:#1e40af;margin-bottom:10px;display:flex;gap:6px;align-items:center}
+/* 单个专业 */
+.mj-item{background:#f8fafc;border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:8px}
+.mj-item:last-child{margin-bottom:0}
+.mj-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.mj-name{font-size:14px;font-weight:700;color:var(--text)}
+.mj-tag{border-radius:12px;padding:2px 8px;font-size:11px;font-weight:600}
+.mj-tag.tech{background:#dbeafe;color:#1e40af}
+.mj-tag.hot{background:#fce7f3;color:#9d174d}
+.mj-tag.ai{background:#f5f3ff;color:#5b21b6}
+.mj-tag.trade{background:#d1fae5;color:#065f46}
+.mj-tag.art{background:#fff7ed;color:#9a3412}
+.mj-tag.med{background:#fef3c7;color:#92400e}
+.mj-job{font-size:12px;color:var(--text2);margin-bottom:8px}
+.mj-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
+.mj-stat{background:#fff;border:1px solid var(--border);border-radius:8px;padding:8px;text-align:center}
+.mj-stat .sl{font-size:10px;color:var(--text3);margin-bottom:2px}
+.mj-stat .sv{font-size:12px;font-weight:600;color:var(--text)}
+.mj-stat .sv.sal{color:var(--orange)}
+/* 卡片底部 */
+.sch-footer{padding:12px 18px;border-top:1px solid var(--border);background:#fafafa;display:flex;gap:10px;flex-wrap:wrap}
+.btn-phone{background:var(--primary);color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:13px;cursor:pointer;font-weight:600}
+.btn-area{background:#f1f5f9;color:var(--text2);border:1.5px solid var(--border);border-radius:8px;padding:8px 14px;font-size:13px;cursor:default}
+.exp-badge{background:var(--green-light);color:#065f46;border:1px solid var(--green-border);border-radius:8px;padding:8px 14px;font-size:13px;font-weight:600}
+
+/* ===== 地图区 ===== */
+.map-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin-top:14px}
+.dc{background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:16px;text-align:center;cursor:pointer;transition:.15s}
+.dc:hover,.dc.sel{background:var(--primary-light);border-color:var(--primary)}
+.dc .d-icon{font-size:24px;margin-bottom:6px}
+.dc .d-name{font-size:13px;font-weight:700;color:var(--text)}
+.dc .d-cnt{font-size:12px;color:var(--text3);margin-top:2px}
+
+/* ===== 就业警示 ===== */
+.warn-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.warn-card{border-radius:12px;padding:16px}
+.warn-card.r{background:var(--red-light);border:1.5px solid var(--red-border)}
+.warn-card.g{background:var(--green-light);border:1.5px solid var(--green-border)}
+.warn-card h4{font-size:14px;font-weight:700;margin-bottom:10px}
+.warn-card.r h4{color:#991b1b}
+.warn-card.g h4{color:#065f46}
+.warn-item{font-size:13px;color:var(--text2);padding:4px 0;border-bottom:1px solid rgba(0,0,0,.06)}
+.warn-item:last-child{border-bottom:none}
+.prog-bar{height:8px;background:#e5e7eb;border-radius:4px;margin:6px 0 10px;overflow:hidden}
+.prog-fill{height:100%;border-radius:4px}
+
+/* ===== 激励区 ===== */
+.moti-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:16px}
+.moti-card{border-radius:12px;padding:16px;border-left:4px solid}
+.moti-card.p{background:#fdf4ff;border-color:var(--purple)}
+.moti-card.b{background:var(--primary-light);border-color:var(--primary)}
+.moti-card.g{background:var(--green-light);border-color:var(--green)}
+.moti-card h4{font-size:13px;font-weight:700;margin-bottom:6px}
+.moti-card p{font-size:12px;color:var(--text2);line-height:1.6}
+
+/* ===== 行动计划 ===== */
+.plan-list{list-style:none;counter-reset:step}
+.plan-item{counter-increment:step;display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--border)}
+.plan-item:last-child{border-bottom:none}
+.plan-num{background:var(--primary);color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;margin-top:2px}
+.plan-content h5{font-size:14px;font-weight:700;margin-bottom:2px}
+.plan-content p{font-size:12px;color:var(--text2)}
+
+/* ===== 免责声明 ===== */
+.disclaimer{background:#f8fafc;border:1px solid var(--border);border-radius:10px;padding:14px;font-size:11px;color:var(--text3);line-height:1.7;margin-top:20px}
+
+@media(max-width:600px){
+  .hero h1{font-size:20px}
+  .score-grid,.boost-grid,.warn-grid,.moti-grid{grid-template-columns:1fr}
+  .sch-info{grid-template-columns:1fr}
+  .mj-stats{grid-template-columns:1fr 1fr}
 }
-@media(max-width:480px){.district-grid{grid-template-columns:repeat(2,1fr)!important}}
 </style>
 </head>
 <body>
-<!-- HERO -->
+
+<!-- ====== HERO ====== -->
 <div class="hero">
-  <div class="container"><div class="hero-inner">
-    <div class="hero-badges" style="margin-bottom:14px">
+  <div class="hero-inner">
+    <div class="hero-tags">
       <span class="hbadge">2026届自贡中考</span>
-      <span class="hbadge y">男生专属版</span>
-      <span class="hbadge g">官方数据</span>
+      <span class="hbadge">男生专属版</span>
+      <span class="hbadge">官方2025分数数据</span>
       <span class="hbadge">AI时代选校指南</span>
     </div>
-    <h1>自贡市职高·全景选校报告</h1>
-    <p class="sub">成绩 300–400分 · 富顺/自贡男生 · 含专业薪资 & 职业出路 · 2026最新版</p>
-    <div class="hero-badges">
+    <h1>⚡ 自贡市职高全景选校报告</h1>
+    <p>成绩 300–400分 · 富顺/自贡男生 · 含专业出路 &amp; 薪资参考 · 2025年官方数据版</p>
+    <div class="hero-tags">
       <span class="hbadge">9所院校完整收录</span>
-      <span class="hbadge">30+专业出路分析</span>
+      <span class="hbadge">30+专业详解</span>
       <span class="hbadge">真实薪资区间</span>
       <span class="hbadge">智能筛选+地图</span>
     </div>
-  </div></div>
+  </div>
 </div>
 
-<div class="container">
+<div class="wrap">
 
-<!-- TOP ALERT -->
-<div style="margin-top:28px" class="alert w">
+<!-- ====== 优先级说明 ====== -->
+<div class="alert" style="margin-top:24px">
   <div class="alert-icon">🔥</div>
-  <div class="alert-body">
+  <div>
     <h4>先看这里 — 优先级说明</h4>
-    <p>300–400分处于普通高中录取线边缘区域。<strong>如果距普高线差距在60分以内，强烈建议冲刺普高！</strong>普高→大学这条路，是AI时代最保险的上升通道。本报告先分析普高冲刺方案，再提供完整职高备选。</p>
+    <p>300–400分处于市级普高录取控制线边缘。<strong>自贡市2025年中考市级普高最低控制线为430分。</strong>差距在100分以内均值得全力冲刺！普高→高考→大学，是AI时代最稳固的上升通道。本报告先分析普高冲刺方案，再提供完整职高备选。</p>
   </div>
 </div>
 
-<!-- ===== SECTION 1: 普高分析 ===== -->
+<!-- ====== SECTION 1: 普高分数线 ====== -->
 <div class="section">
-  <h2 class="section-title"><span class="icon">🎯</span>普通高中录取线 & 冲刺分析</h2>
-  <p class="section-desc">2026年自贡市中考普通高中录取分数线参考（来源：自贡市人民政府官网 www.zg.gov.cn · 分数线以当年招生计划实际公告为准）</p>
+  <div class="sec-title">🎯 2025年自贡中考普通高中录取分数线</div>
+  <div class="sec-desc">数据来源：2025年自贡市中考成绩正式公告（总分约800+分制）· 以当年实际公告为准</div>
+
   <div class="score-grid">
-    <div class="score-card b">
-      <div class="sc-label">你的成绩区间</div>
-      <div class="sc-num">300<span style="font-size:18px;color:#94a3b8">–400</span></div>
-      <div class="sc-sub">处于普高线边缘区域</div>
+    <div class="sc-box blue">
+      <div class="label">你的成绩区间</div>
+      <div class="num">300<span style="font-size:16px;color:#93c5fd">–400</span></div>
+      <div class="sub">处于市级普高线以下</div>
     </div>
-    <div class="score-card g">
-      <div class="sc-label">最低普高门槛</div>
-      <div class="sc-num">403</div>
-      <div class="sc-sub">自贡市普通高中最低录取线</div>
+    <div class="sc-box green">
+      <div class="label">市级普高最低线</div>
+      <div class="num">430</div>
+      <div class="sub">一般公办高中最低门槛</div>
     </div>
-    <div class="score-card r">
-      <div class="sc-label">350分→最低普高差距</div>
-      <div class="sc-num">+53</div>
-      <div class="sc-sub">60天专项冲刺可实现</div>
+    <div class="sc-box red">
+      <div class="label">以350分为例差距</div>
+      <div class="num">+80</div>
+      <div class="sub">需努力补足，3–6个月可期</div>
     </div>
-    <div class="score-card o">
-      <div class="sc-label">艺体特长可降分</div>
-      <div class="sc-num">50–80</div>
-      <div class="sc-sub">体育/美术特长生降分录取</div>
+    <div class="sc-box orange">
+      <div class="label">省级重点最低线</div>
+      <div class="num">525+</div>
+      <div class="sub">省二级≥525 / 省一级≥555</div>
     </div>
   </div>
 
-  <div class="pb-section">
-    <h4>📊 2026年自贡普通高中录取分数参考（以往年数据为基准）</h4>
-    <div class="pb-row">
-      <div class="pb-label"><span>🌟 自贡一中（省重点）</span><span style="color:#dc2626">565分</span></div>
-      <div class="pb-track"><div class="pb-fill" style="width:94%;background:linear-gradient(90deg,#1d4ed8,#dc2626)">565</div></div>
-    </div>
-    <div class="pb-row">
-      <div class="pb-label"><span>🌟 自贡二中（省重点）</span><span style="color:#7c3aed">552分</span></div>
-      <div class="pb-track"><div class="pb-fill" style="width:92%;background:linear-gradient(90deg,#7c3aed,#1d4ed8)">552</div></div>
-    </div>
-    <div class="pb-row">
-      <div class="pb-label"><span>🏫 富顺第一中学校</span><span style="color:#0891b2">483分</span></div>
-      <div class="pb-track"><div class="pb-fill" style="width:80%;background:linear-gradient(90deg,#0891b2,#059669)">483</div></div>
-    </div>
-    <div class="pb-row">
-      <div class="pb-label"><span>🏫 富顺育才中学</span><span style="color:#059669">432分</span></div>
-      <div class="pb-track"><div class="pb-fill" style="width:72%;background:linear-gradient(90deg,#059669,#d97706)">432</div></div>
-    </div>
-    <div class="pb-row">
-      <div class="pb-label"><span>📚 普高最低线</span><span style="color:#d97706">403分</span></div>
-      <div class="pb-track"><div class="pb-fill" style="width:67%;background:linear-gradient(90deg,#d97706,#ea580c)">403</div></div>
-    </div>
-    <div class="pb-row">
-      <div class="pb-label"><span style="color:#94a3b8">▶ 你的位置（350分示例）</span><span style="color:#94a3b8">350分</span></div>
-      <div class="pb-track"><div class="pb-fill" style="width:58%;background:linear-gradient(90deg,#94a3b8,#cbd5e1)">350</div></div>
-    </div>
-    <div style="margin-top:10px;font-size:12px;color:var(--muted)">📌 以350分为例：距最低普高线差53分 | 距富顺育才差82分 | 距富一中差133分</div>
-  </div>
-
-  <div class="hs-grid">
-    <div class="hs-card" style="border-left-color:#dc2626">
-      <div class="hs-name">🌟 自贡一中</div>
-      <div class="hs-score">565</div>
-      <span class="chip-h">距350分：+215分</span>
-      <div class="hs-type">省级重点 · 大安区 · 升学率极高</div>
-    </div>
-    <div class="hs-card" style="border-left-color:#7c3aed">
-      <div class="hs-name">🌟 自贡二中</div>
-      <div class="hs-score">552</div>
-      <span class="chip-h">距350分：+202分</span>
-      <div class="hs-type">省级重点 · 大安区 · 竞赛名校</div>
-    </div>
-    <div class="hs-card" style="border-left-color:#0891b2">
-      <div class="hs-name">🏫 富顺第一中学校</div>
-      <div class="hs-score">483</div>
-      <span class="chip-h">距350分：+133分</span>
-      <div class="hs-type">富顺县重点高中 · 升学率优秀</div>
-    </div>
-    <div class="hs-card" style="border-left-color:#059669">
-      <div class="hs-name">🏫 富顺育才中学</div>
-      <div class="hs-score">432</div>
-      <span class="chip-m">距350分：+82分</span>
-      <div class="hs-type">富顺县优质高中 · 艺体特长可降分</div>
-    </div>
-    <div class="hs-card" style="border-left-color:#ea580c">
-      <div class="hs-name">📚 普高最低线学校</div>
-      <div class="hs-score">403</div>
-      <span class="chip-m">距350分：+53分（可冲！）</span>
-      <div class="hs-type">通往大学本科最后关口 · 强烈推荐冲刺</div>
-    </div>
-    <div class="hs-card" style="border-left-color:#d97706">
-      <div class="hs-name">💡 艺体特长生通道</div>
-      <div class="hs-score">降50–80</div>
-      <span style="background:#fef9c3;color:#a16207;border:1px solid #fde047;padding:3px 9px;border-radius:9px;font-size:12px;font-weight:700">特长生降分录取</span>
-      <div class="hs-type">体育/美术/音乐 · 文化分+专业测试</div>
-    </div>
-  </div>
+  <table class="score-table">
+    <thead><tr>
+      <th>批次</th><th>学校</th><th>2025录取分数线</th><th>适合区间</th>
+    </tr></thead>
+    <tbody>
+      <tr><td><span class="badge-tier tier1">提前/一批</span></td><td>蜀光中学</td><td class="hl-red">780.3 / 764.8</td><td>顶尖生</td></tr>
+      <tr><td><span class="badge-tier tier1">提前/一批</span></td><td>富顺二中</td><td class="hl-red">777.3 / 757.1</td><td>顶尖生</td></tr>
+      <tr><td><span class="badge-tier tier1">提前/一批</span></td><td>衡川实验</td><td class="hl-red">755.2</td><td>优秀生</td></tr>
+      <tr><td><span class="badge-tier tier1">提前/一批</span></td><td>富顺一中</td><td class="hl-red">761.9 / 713.9</td><td>优秀生</td></tr>
+      <tr><td><span class="badge-tier tier1">提前/一批</span></td><td>荣县中学</td><td class="hl-red">752.7 / 734.8</td><td>优秀生</td></tr>
+      <tr><td><span class="badge-tier tier1">提前/一批</span></td><td>自贡一中</td><td class="hl-red">749.5 / 737.0</td><td>优秀生</td></tr>
+      <tr><td><span class="badge-tier tier2">第二批</span></td><td>旭川中学</td><td class="hl-orange">733.8 / 693.9</td><td>中上生</td></tr>
+      <tr><td><span class="badge-tier tier2">第二批</span></td><td>江姐中学</td><td class="hl-orange">725.9 / 687.7</td><td>中上生</td></tr>
+      <tr><td><span class="badge-tier tier2">第二批</span></td><td>荣县一中</td><td class="hl-orange">737.5 / 670.0</td><td>中上生</td></tr>
+      <tr><td><span class="badge-tier tier2">第二批</span></td><td>嘉祥外国语</td><td class="hl-orange">696.2</td><td>中上生</td></tr>
+      <tr><td><span class="badge-tier tier3">第三批</span></td><td>富顺城关中学</td><td class="hl-green">655.0</td><td>中等生</td></tr>
+      <tr><td><span class="badge-tier tier3">第三批</span></td><td>六中</td><td class="hl-green">628.9</td><td>中等生</td></tr>
+      <tr><td><span class="badge-tier tier3">第三批</span></td><td>富顺三中</td><td class="hl-green">624.4</td><td>中等生</td></tr>
+      <tr><td><span class="badge-tier tier3">第三批</span></td><td>二十二中</td><td class="hl-green">614.3</td><td>中等生</td></tr>
+      <tr><td><span class="badge-tier tier3">第三批</span></td><td>田家炳中学</td><td class="hl-green">598.9</td><td>中等生</td></tr>
+      <tr><td><span class="badge-tier tier3">第三批</span></td><td>十四中</td><td class="hl-green">591.2</td><td>中等生</td></tr>
+      <tr><td><span class="badge-tier tier3">第三批</span></td><td>自贡外国语</td><td class="hl-green">582.3</td><td>中等生</td></tr>
+      <tr><td><span class="badge-tier tier3">第三批</span></td><td>永年中学</td><td class="hl-green">591.7</td><td>中等生</td></tr>
+      <tr><td><span class="badge-tier tier3">第三批</span></td><td>牛佛中学</td><td class="hl-green">574.7</td><td>中等生</td></tr>
+      <tr><td><span class="badge-tier tier3">第三批</span></td><td>玉章中学</td><td class="hl-green">578.6</td><td>中等生</td></tr>
+      <tr><td><span class="badge-tier tier4">职技综合高中</span></td><td>职技综合高中班</td><td class="hl-green">567.1</td><td>中等生</td></tr>
+      <tr style="background:#f0fdf4"><td colspan="2"><strong>📌 省一级普高最低控制线</strong></td><td class="hl-green"><strong>555分</strong></td><td>—</td></tr>
+      <tr style="background:#f0fdf4"><td colspan="2"><strong>📌 省二级普高最低控制线</strong></td><td class="hl-green"><strong>525分</strong></td><td>—</td></tr>
+      <tr style="background:#fff7ed"><td colspan="2"><strong>📌 市级（一般）普高最低控制线</strong></td><td class="hl-orange"><strong>430分</strong></td><td>—</td></tr>
+      <tr style="background:#fef2f2"><td colspan="2"><strong>🎯 你的目标线（300–400分冲刺）</strong></td><td class="hl-red"><strong>430分</strong></td><td>差距约30–130分</td></tr>
+    </tbody>
+  </table>
 </div>
 
-<!-- ===== SECTION 2: 冲刺方案 ===== -->
+<!-- ====== SECTION 2: 冲刺方案 ====== -->
 <div class="section">
-  <h2 class="section-title"><span class="icon">⚡</span>普高冲刺方案（以350分→403分为例）</h2>
-  <p class="section-desc">差距53分，3–6个月科学复习，完全有希望实现！</p>
-  <div class="sprint-grid">
-    <div class="sprint-card" style="border-top:4px solid var(--primary)">
-      <div class="sp-subj">📐 数学</div>
-      <div class="sp-gain">+15 <span>分可期</span></div>
-      <ul>
+  <div class="sec-title">🚀 冲刺普高方案（以350分→430分为例）</div>
+  <div class="sec-desc">差距80分，3–6个月科学复习，完全有希望实现！</div>
+
+  <div class="boost-grid">
+    <div class="boost-card m">
+      <div class="bh">📐 数学</div>
+      <div class="bsc">+20 分可期</div>
+      <ul class="bi">
         <li>每天1套模拟卷，重点选填</li>
         <li>函数/几何各专项1周突破</li>
         <li>错题本每周复盘2次</li>
-        <li>目标：70→85分</li>
+        <li>目标：65→85分</li>
       </ul>
     </div>
-    <div class="sprint-card" style="border-top:4px solid var(--secondary)">
-      <div class="sp-subj">📖 语文</div>
-      <div class="sp-gain">+10 <span>分可期</span></div>
-      <ul>
+    <div class="boost-card c">
+      <div class="bh">📖 语文</div>
+      <div class="bsc">+15 分可期</div>
+      <ul class="bi">
         <li>作文每周2篇，老师批改</li>
         <li>默写必背篇目争取满分</li>
         <li>阅读理解规范答题训练</li>
-        <li>目标：80→90分</li>
+        <li>目标：75→90分</li>
       </ul>
     </div>
-    <div class="sprint-card" style="border-top:4px solid var(--orange)">
-      <div class="sp-subj">🌍 英语</div>
-      <div class="sp-gain">+12 <span>分可期</span></div>
-      <ul>
+    <div class="boost-card e">
+      <div class="bh">🌍 英语</div>
+      <div class="bsc">+20 分可期</div>
+      <ul class="bi">
         <li>每天背30个单词，坚持3月</li>
-        <li>完形/阅读专项练习</li>
+        <li>完形/阅读专题练习</li>
         <li>作文套路模板背熟</li>
-        <li>目标：55→67分</li>
+        <li>目标：50→70分</li>
       </ul>
     </div>
-    <div class="sprint-card" style="border-top:4px solid var(--success)">
-      <div class="sp-subj">🔬 理综/史地</div>
-      <div class="sp-gain">+16 <span>分可期</span></div>
-      <ul>
+    <div class="boost-card s">
+      <div class="bh">🔬 理综/史地</div>
+      <div class="bsc">+25 分可期</div>
+      <ul class="bi">
         <li>物理公式表+计算练习</li>
         <li>化学方程式专项记忆</li>
-        <li>历史时间轴串联法</li>
+        <li>历史时间轴联法</li>
         <li>地理图表判读专项</li>
       </ul>
     </div>
   </div>
-  <div style="background:#eff6ff;border-radius:14px;padding:20px;border:1px solid #bfdbfe">
-    <div style="font-size:15px;font-weight:700;color:var(--primary);margin-bottom:14px">📅 60天冲刺每日时间表</div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px">
-      <div style="background:#fff;border-radius:10px;padding:12px;border:1px solid #bfdbfe">
-        <div style="color:#d97706;font-weight:700;margin-bottom:6px;font-size:13px">早晨 6:30–7:30</div>
-        <div style="font-size:13px;color:var(--muted)">背英语单词30个<br>复盘昨日错题</div>
-      </div>
-      <div style="background:#fff;border-radius:10px;padding:12px;border:1px solid #bfdbfe">
-        <div style="color:var(--primary);font-weight:700;margin-bottom:6px;font-size:13px">上午 正课</div>
-        <div style="font-size:13px;color:var(--muted)">专注听课，实时笔记<br>课间10分钟整理</div>
-      </div>
-      <div style="background:#fff;border-radius:10px;padding:12px;border:1px solid #bfdbfe">
-        <div style="color:var(--success);font-weight:700;margin-bottom:6px;font-size:13px">下午 自习 2h</div>
-        <div style="font-size:13px;color:var(--muted)">数学1套模拟题<br>理综专项练习</div>
-      </div>
-      <div style="background:#fff;border-radius:10px;padding:12px;border:1px solid #bfdbfe">
-        <div style="color:var(--secondary);font-weight:700;margin-bottom:6px;font-size:13px">晚上 2h</div>
-        <div style="font-size:13px;color:var(--muted)">语文作文/阅读<br>错题本归纳整理</div>
-      </div>
+
+  <div class="alert blue">
+    <div class="alert-icon">📅</div>
+    <div>
+      <h4>60天冲刺每日时间表</h4>
+      <p>早晨6:30-7:30 背英语单词30个+复盘昨日错题 | 上午 专注听课实时笔记+课间10分整理 | 下午 数学1套模拟题+理综专题练习 | 晚上 语文作文/阅读+错题本归纳整理</p>
     </div>
   </div>
 </div>
 
-<!-- ===== SECTION 3: 职高选校 ===== -->
+<!-- ====== SECTION 3: 职高实验班升学线 ====== -->
 <div class="section">
-  <h2 class="section-title"><span class="icon">🏫</span>职高选校（备选方案）</h2>
-  <p class="section-desc">9所学校全收录 · 30+专业详细出路 · 含真实薪资范围 · 公办/民办均有</p>
-
-
-  <!-- 中专就业难警示 -->
-  <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:14px;padding:18px 20px;margin-bottom:18px">
-    <div style="font-size:15px;font-weight:800;color:#dc2626;margin-bottom:12px;display:flex;align-items:center;gap:8px">
-      ⚠️ 重要：中专/职高学历求职现实（请家长和孩子认真看！）
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:14px">
-      <div style="background:#fff;border-radius:10px;padding:12px;border:1px solid #fecaca;text-align:center">
-        <div style="font-size:28px;font-weight:900;color:#dc2626">60%+</div>
-        <div style="font-size:12px;color:#64748b;margin-top:3px">自贡本地企业对计算机/会计类岗位<br>要求<strong>大专及以上</strong>学历</div>
-      </div>
-      <div style="background:#fff;border-radius:10px;padding:12px;border:1px solid #fecaca;text-align:center">
-        <div style="font-size:28px;font-weight:900;color:#d97706">3–6个月</div>
-        <div style="font-size:12px;color:#64748b;margin-top:3px">职高毕业生平均找到第一份工作<br>需要的时间（含专业不对口）</div>
-      </div>
-      <div style="background:#fff;border-radius:10px;padding:12px;border:1px solid #fecaca;text-align:center">
-        <div style="font-size:28px;font-weight:900;color:#7c3aed">3+2</div>
-        <div style="font-size:12px;color:#64748b;margin-top:3px">强烈建议走"3年职高+2年大专"<br>升学通道，大专学历竞争力大幅提升</div>
-      </div>
-      <div style="background:#fff;border-radius:10px;padding:12px;border:1px solid #fecaca;text-align:center">
-        <div style="font-size:28px;font-weight:900;color:#059669">技能类</div>
-        <div style="font-size:12px;color:#64748b;margin-top:3px">焊工·数控·汽修·电工 等持证技能类<br>专业就业率相对好于文职类</div>
-      </div>
-    </div>
-    <!-- 薪资真实对比条 -->
-    <div style="font-size:13px;font-weight:700;color:#dc2626;margin-bottom:10px">📊 初入职场真实月薪区间（自贡本地 · BOSS直聘实际数据）</div>
-    <div style="display:flex;flex-direction:column;gap:8px">
-      <div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px"><span>🔧 焊接/机械技能</span><span style="color:#059669">3000–5000元</span></div>
-        <div style="height:12px;background:#f1f5f9;border-radius:6px;overflow:hidden"><div style="width:58%;height:100%;background:linear-gradient(90deg,#059669,#34d399);border-radius:6px"></div></div>
-      </div>
-      <div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px"><span>💻 计算机/IT支持</span><span style="color:#2563eb">2800–4500元</span></div>
-        <div style="height:12px;background:#f1f5f9;border-radius:6px;overflow:hidden"><div style="width:50%;height:100%;background:linear-gradient(90deg,#2563eb,#60a5fa);border-radius:6px"></div></div>
-      </div>
-      <div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px"><span>🚗 汽修（学徒期）</span><span style="color:#d97706">2000–3500元</span></div>
-        <div style="height:12px;background:#f1f5f9;border-radius:6px;overflow:hidden"><div style="width:38%;height:100%;background:linear-gradient(90deg,#d97706,#fbbf24);border-radius:6px"></div></div>
-      </div>
-      <div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px"><span>🛒 电商/新媒体</span><span style="color:#7c3aed">2800–4000元</span></div>
-        <div style="height:12px;background:#f1f5f9;border-radius:6px;overflow:hidden"><div style="width:44%;height:100%;background:linear-gradient(90deg,#7c3aed,#c4b5fd);border-radius:6px"></div></div>
-      </div>
-      <div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px"><span>📊 会计/文职</span><span style="color:#dc2626">2500–3800元（竞争激烈）</span></div>
-        <div style="height:12px;background:#f1f5f9;border-radius:6px;overflow:hidden"><div style="width:36%;height:100%;background:linear-gradient(90deg,#dc2626,#fca5a5);border-radius:6px"></div></div>
-      </div>
-      <div>
-        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px"><span>👨‍🍳 烹饪/服务（帮厨）</span><span style="color:#ea580c">2500–4000元</span></div>
-        <div style="height:12px;background:#f1f5f9;border-radius:6px;overflow:hidden"><div style="width:42%;height:100%;background:linear-gradient(90deg,#ea580c,#fb923c);border-radius:6px"></div></div>
-      </div>
-    </div>
-    <div style="margin-top:10px;font-size:12px;color:#64748b;border-top:1px solid #fecaca;padding-top:8px">
-      📍 自贡三线城市薪资比成都低约 <strong>30–40%</strong>；若去成都或省外就业，同等经验薪资明显更高。<br>
-      ⚠️ 以上为<strong>初入职场保守估计</strong>，实际因个人能力·企业性质·是否持证差异较大。数据来源：BOSS直聘·猎聘·职友集 2024-2025年实际招聘数据。
+  <div class="sec-title">🎓 中职升学实验班录取分数线（2025年）</div>
+  <div class="sec-desc">升学实验班可通过技能高考升入大学，是职高生的重要上升通道 · 数据来源：2025年自贡中考官方公告</div>
+  <table class="score-table">
+    <thead><tr>
+      <th>学校</th><th>2025年升学实验班录取线</th><th>备注</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>自贡倍乐职业学校</td><td class="hl-green"><strong>383.0分</strong></td><td>全市最低，300+可冲</td></tr>
+      <tr><td>自贡市盐业技工学校</td><td class="hl-green"><strong>404.0分</strong></td><td>400分附近可冲</td></tr>
+      <tr><td>旅游职校（自贡市旅游职业学校）</td><td class="hl-green"><strong>429.9分</strong></td><td>约430分</td></tr>
+      <tr><td>自贡市技工学校</td><td class="hl-orange"><strong>453.4分</strong></td><td>—</td></tr>
+      <tr><td>自贡职业技术学院中专部</td><td class="hl-orange"><strong>472.1分</strong></td><td>院校附属中专，背景强</td></tr>
+      <tr><td>自贡职业技术学校</td><td class="hl-orange"><strong>504.9分</strong></td><td>省级重点</td></tr>
+      <tr><td>荣县职业技术学校</td><td class="hl-red"><strong>532.6分</strong></td><td>荣县地区首选</td></tr>
+      <tr><td>自贡市东方职业技术学校</td><td class="hl-red"><strong>534.2分</strong></td><td>—</td></tr>
+      <tr><td>富顺职业技术学校</td><td class="hl-red"><strong>549.5分</strong></td><td>富顺县本地首选</td></tr>
+    </tbody>
+  </table>
+  <div class="alert" style="margin-top:16px">
+    <div class="alert-icon">💡</div>
+    <div>
+      <h4>选择策略：分数段匹配</h4>
+      <p>300–390分 → 优先考虑倍乐（383）、盐业（404）的升学实验班；390–430分 → 可冲旅游职校（429.9）、技工（453）；430分以上 → 优先考虑正规普高，再考虑中职升学班。</p>
     </div>
   </div>
-  <!-- FILTER -->
-  <div class="filter-wrap">
-    <h3>🔍 智能筛选 · 找到最适合你的学校</h3>
-    <div class="f-row">
-      <label>我的分数：</label>
-      <input class="fi" type="number" id="minS" placeholder="最低 如300" style="width:110px">
-      <span style="color:var(--muted);font-size:14px">—</span>
-      <input class="fi" type="number" id="maxS" placeholder="最高 如400" style="width:110px">
-    </div>
-    <div class="f-row">
-      <label>倾向目标：</label>
-      <div class="tg" id="goalT">
-        <span class="tag active" data-v="all">全部</span>
-        <span class="tag" data-v="升学">升学深造</span>
-        <span class="tag" data-v="就业">尽快就业</span>
-        <span class="tag" data-v="ai">AI方向</span>
-      </div>
-    </div>
-    <div class="f-row">
-      <label>学校性质：</label>
-      <div class="tg" id="typeT">
-        <span class="tag active" data-v="all">全部</span>
-        <span class="tag" data-v="公办">公办</span>
-        <span class="tag" data-v="民办">民办</span>
-      </div>
-    </div>
-    <div class="f-row">
-      <label>所在区域：</label>
-      <div class="tg" id="distT">
-        <span class="tag active" data-v="all">全部</span>
-        <span class="tag" data-v="大安区">大安区</span>
-        <span class="tag" data-v="自流井区">自流井区</span>
-        <span class="tag" data-v="贡井区">贡井区</span>
-        <span class="tag" data-v="沿滩区">沿滩区</span>
-        <span class="tag" data-v="荣县">荣县</span>
-        <span class="tag" data-v="富顺县">富顺县</span>
-      </div>
-    </div>
-    <div class="f-row">
-      <button class="fbtn p" onclick="applyF()">🔍 开始筛选</button>
-      <button class="fbtn r" onclick="resetF()">重置</button>
-      <span id="fRes" style="font-size:13px;color:var(--primary);font-weight:600;margin-left:8px"></span>
+</div>
+
+<!-- ====== 筛选器 ====== -->
+<div class="filter-wrap">
+  <div class="filter-title">🔍 智能筛选学校</div>
+  <div class="filter-row">
+    <span class="filter-label">升学目标</span>
+    <div id="goalT">
+      <span class="tag active" data-v="all">全部</span>
+      <span class="tag" data-v="升学">侧重升学</span>
+      <span class="tag" data-v="就业">侧重就业</span>
+      <span class="tag" data-v="ai">AI/新兴专业</span>
     </div>
   </div>
+  <div class="filter-row">
+    <span class="filter-label">办学类型</span>
+    <div id="typeT">
+      <span class="tag active" data-v="all">全部</span>
+      <span class="tag" data-v="公办">公办</span>
+      <span class="tag" data-v="民办">民办</span>
+    </div>
+  </div>
+  <div class="filter-row">
+    <span class="filter-label">所在区域</span>
+    <div id="distT">
+      <span class="tag active" data-v="all">全部</span>
+      <span class="tag" data-v="富顺县">富顺县</span>
+      <span class="tag" data-v="自流井区">自流井区</span>
+      <span class="tag" data-v="贡井区">贡井区</span>
+      <span class="tag" data-v="大安区">大安区</span>
+      <span class="tag" data-v="沿滩区">沿滩区</span>
+      <span class="tag" data-v="荣县">荣县</span>
+    </div>
+  </div>
+  <div class="filter-row">
+    <span class="filter-label">分数范围</span>
+    <input type="number" id="minS" placeholder="最低分">
+    <span style="color:var(--text3);font-size:13px">—</span>
+    <input type="number" id="maxS" placeholder="最高分">
+    <button class="btn-apply" onclick="applyFilter()">筛选</button>
+    <button class="btn-reset" onclick="resetFilter()">重置</button>
+  </div>
+  <div class="filter-result" id="fRes"></div>
+</div>
 
-  <!-- CARDS -->
-  <div class="schools-grid" id="sg">
+<!-- ====== 地图区 ====== -->
+<div class="section" style="margin-bottom:20px">
+  <div class="sec-title">🗺 学校地图 · 点击区域快速筛选</div>
+  <div class="sec-desc">点击下方区域卡片，快速筛选对应地区的学校；双击任意区域重置筛选</div>
+  <div class="map-grid" id="mapGrid">
+    <div class="dc" id="dc-富顺县" onclick="filterDist('富顺县')">
+      <div class="d-icon">🏫</div>
+      <div class="d-name">富顺县</div>
+      <div class="d-cnt">2所学校</div>
+    </div>
+    <div class="dc" id="dc-自流井区" onclick="filterDist('自流井区')">
+      <div class="d-icon">🏛</div>
+      <div class="d-name">自流井区</div>
+      <div class="d-cnt">3所学校</div>
+    </div>
+    <div class="dc" id="dc-贡井区" onclick="filterDist('贡井区')">
+      <div class="d-icon">🏗</div>
+      <div class="d-name">贡井区</div>
+      <div class="d-cnt">1所学校</div>
+    </div>
+    <div class="dc" id="dc-大安区" onclick="filterDist('大安区')">
+      <div class="d-icon">🏢</div>
+      <div class="d-name">大安区</div>
+      <div class="d-cnt">1所学校</div>
+    </div>
+    <div class="dc" id="dc-沿滩区" onclick="filterDist('沿滩区')">
+      <div class="d-icon">🌊</div>
+      <div class="d-name">沿滩区</div>
+      <div class="d-cnt">1所学校</div>
+    </div>
+    <div class="dc" id="dc-荣县" onclick="filterDist('荣县')">
+      <div class="d-icon">🌾</div>
+      <div class="d-name">荣县</div>
+      <div class="d-cnt">1所学校</div>
+    </div>
+  </div>
+</div>
 
-    <div class="sc-card" data-score="0" data-goal="升学,就业" data-type="公办" data-district="富顺县">
-      <div class="sc-top">
-        <div class="sc-top-left">
-          <div class="sc-rank">省级示范职高 · 富顺县首选</div>
-          <div class="sc-name">富顺职业技术学校</div>
-          <div class="sc-loc">📍 四川省自贡市富顺县</div>
-        </div>
-        <span class="sc-badge public">公办</span>
+<!-- ====== SECTION 4: 学校列表 ====== -->
+<div id="schoolGrid">
+
+  <div class="sch-card" data-score="383" data-goal="升学,就业" data-type="公办" data-district="富顺县">
+    <div class="sch-top">
+      <div class="sch-left">
+        <div class="rank-tag">富顺县首选 · 省级示范职高</div>
+        <div class="name">富顺职业技术学校</div>
+        <div class="loc">📍 自贡市富顺县</div>
       </div>
-      <div class="sc-info">
-        <div class="si-row"><span class="si-label">录取分数线</span><span class="si-val green">无分数限制</span></div>
-        <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">2000–3500元</span></div>
-        <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年（可升大专）</span></div>
-        <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">省级示范职高 · 学费低 · 距家近</span></div>
-        <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★★★</span></div>
-      </div>
-      <div class="majors-section">
-        <button class="majors-toggle" onclick="toggleMajors(this)">
-          <span>📚 专业详情（5个）· 点击展开薪资与出路</span>
-          <span class="arrow">▼</span>
-        </button>
-        <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;padding:5px 12px;font-size:11px;color:#0369a1;margin:0 18px 10px;display:flex;align-items:center;gap:6px"><span>📊</span><span>薪资参考：BOSS直聘·猎聘·职友集 | 自贡地区 | 2024-2025年 | <strong>初入职场保守估计</strong>，中专学历就业难度较大，建议升大专</span></div><div class="majors-content">
-        <div class="major-item">
-          <div class="mj-header">
+      <span class="sch-badge pub">公办</span>
+    </div>
+    <div class="sch-info">
+      <div class="si-row"><span class="si-label">升学实验班</span><span class="si-val green">549.5（升学实验班）</span></div>
+      <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">2000–3500元/年</span></div>
+      <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年（可升大专）</span></div>
+      <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">省级示范职高 · 学费低 · 距家近</span></div>
+      <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★★★</span></div>
+    </div>
+    <div class="majors-wrap">
+      <button class="majors-btn" onclick="toggleMajors(this)">
+        <span>📚 专业详情（5个）· 点击展开薪资与出路</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="majors-content">
+        <div class="data-src">📊 升学班分数线来源：2025年自贡中考官方公告；专业信息参考学校官网，以学校招生简章为准</div>
+        <div class="mj-item">
+          <div class="mj-head">
             <span class="mj-name">计算机应用</span>
             <span class="mj-tag tech">技术</span>
           </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：网络运维·程序员助理·IT支持</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style="font-size:12px">2800–4500元<br><small style="color:#94a3b8;font-size:10px">初入 · 3-5年可达5000-8000</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 高增长</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
+          <div class="mj-job">💼 就业方向：网络运维 · 程序员助理 · IT支持</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2800–4500元<br><span style="font-size:10px;color:#94a3b8">初入 · 3-5年约5000-8000</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 高增长</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→工程师</div></div>
           </div>
         </div>
-        <div class="major-item">
-          <div class="mj-header">
+        <div class="mj-item">
+          <div class="mj-head">
             <span class="mj-name">电子商务</span>
-            <span class="mj-tag ai">热门</span>
+            <span class="mj-tag hot">热门</span>
           </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：电商运营·直播带货·新媒体运营</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style="font-size:12px">2800–4000元<br><small style="color:#94a3b8;font-size:10px">底薪+提成·虚标严重·谨慎</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 强需求</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">汽车维修与检测</span>
-            <span class="mj-tag tech">技术</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：4S店技师·维修技工·质检员</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style="font-size:12px">2000–3500元<br><small style="color:#94a3b8;font-size:10px">⚠️学徒期极低·熟练后6000-12000</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
+          <div class="mj-job">💼 就业方向：电商运营 · 直播带货 · 新媒体运营</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2800–4000元<br><span style="font-size:10px;color:#94a3b8">底薪+提成 · 注意虚标</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 竞争激烈</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→运营主管</div></div>
           </div>
         </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">机械制造与控制</span>
-            <span class="mj-tag tech">技术</span>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">汽车运用与维修</span>
+            <span class="mj-tag trade">技工</span>
           </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：数控操作·设备维护·机械工程师</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style="font-size:12px">3000–5000元<br><small style="color:#94a3b8;font-size:10px">初入操作工·熟练后6000-10000</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 增长</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">会计</span>
-            <span class="mj-tag trade">商科</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：出纳·会计助理·财务专员</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style="font-size:12px">2500–3800元<br><small style="color:#94a3b8;font-size:10px">⚠️中专竞争激烈·多要大专起</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div></div>
-      </div>
-      <div class="sc-footer">
-        <button class="sc-btn btn-p">📞 0813-XXXX（官网查询）</button>
-        <button class="sc-btn btn-s">🗺 富顺县</button>
-      </div>
-    </div>
-
-    <div class="sc-card" data-score="0" data-goal="升学,就业,ai" data-type="公办" data-district="大安区">
-      <div class="sc-top">
-        <div class="sc-top-left">
-          <div class="sc-rank">国家重点职高 · 自贡综合最强</div>
-          <div class="sc-name">自贡职业技术学校</div>
-          <div class="sc-loc">📍 自贡市大安区</div>
-        </div>
-        <span class="sc-badge public">公办</span>
-      </div>
-      <div class="sc-info">
-        <div class="si-row"><span class="si-label">录取分数线</span><span class="si-val green">无分数限制</span></div>
-        <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">2000–3500元</span></div>
-        <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年（3+2升大专）</span></div>
-        <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">国家重点职高 · 专业最全 · 师资强</span></div>
-        <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★★★</span></div>
-      </div>
-      <div class="majors-section">
-        <button class="majors-toggle" onclick="toggleMajors(this)">
-          <span>📚 专业详情（4个）· 点击展开薪资与出路</span>
-          <span class="arrow">▼</span>
-        </button>
-        <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;padding:5px 12px;font-size:11px;color:#0369a1;margin:0 18px 10px;display:flex;align-items:center;gap:6px"><span>📊</span><span>薪资参考：BOSS直聘·猎聘·职友集 | 自贡地区 | 2024-2025年 | <strong>初入职场保守估计</strong>，中专学历就业难度较大，建议升大专</span></div><div class="majors-content">
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">数字媒体技术</span>
-            <span class="mj-tag ai">AI热门</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：短视频制作·平面设计·游戏美术</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style="font-size:12px">2500–4000元<br><small style="color:#94a3b8;font-size:10px">初入·自贡本地岗位少·竞争大</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 极高增长</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
+          <div class="mj-job">💼 就业方向：汽车维修 · 4S店技师 · 车辆检测</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2000–3500元<br><span style="font-size:10px;color:#94a3b8">学徒期极低 · 3年后4000+</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 稳定需求</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">学徒→技师→班长</div></div>
           </div>
         </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">工业机器人技术</span>
-            <span class="mj-tag ai">AI热门</span>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">建筑工程施工</span>
+            <span class="mj-tag trade">技工</span>
           </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：机器人调试·自动化工程师·PLC编程</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style="font-size:12px">3500–5500元<br><small style="color:#94a3b8;font-size:10px">辅助操作岗·调试工程师需大专+</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 爆发增长</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">服装设计</span>
-            <span class="mj-tag service">设计</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：服装设计助理·版型师·电商买手</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2500–3800元<br><small style='color:#94a3b8;font-size:10px'>初入·自贡本地岗位少</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
+          <div class="mj-job">💼 就业方向：施工员 · 工程助理 · 预算员</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3000–5000元<br><span style="font-size:10px;color:#94a3b8">工地作息较辛苦</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 基建需求大</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→工程师</div></div>
           </div>
         </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">美发形象设计</span>
-            <span class="mj-tag service">服务</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：发型师·形象顾问·美容美发店主</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2500–4000元<br><small style='color:#94a3b8;font-size:10px'>学徒帮厨·主厨需5-8年积累</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div></div>
-      </div>
-      <div class="sc-footer">
-        <button class="sc-btn btn-p">📞 0813-XXXX（官网查询）</button>
-        <button class="sc-btn btn-s">🗺 大安区</button>
-      </div>
-    </div>
-
-    <div class="sc-card" data-score="0" data-goal="升学,就业,ai" data-type="公办" data-district="贡井区">
-      <div class="sc-top">
-        <div class="sc-top-left">
-          <div class="sc-rank">公办省级重点 · 全国国防教育示范 ⭐AI推荐</div>
-          <div class="sc-name">自贡市电子信息职业技术学校</div>
-          <div class="sc-loc">📍 贡井区长土镇南环路 | ☎ 0813-3200131</div>
-        </div>
-        <span class="sc-badge public">公办</span>
-      </div>
-      <div class="sc-info">
-        <div class="si-row"><span class="si-label">录取分数线</span><span class="si-val green">无分数限制</span></div>
-        <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">2000–3500元</span></div>
-        <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年（3+2升大专/本科）</span></div>
-        <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">全国国防教育示范学校 · AI专业集中</span></div>
-        <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★★★</span></div>
-      </div>
-      <div class="majors-section">
-        <button class="majors-toggle" onclick="toggleMajors(this)">
-          <span>📚 专业详情（5个）· 点击展开薪资与出路</span>
-          <span class="arrow">▼</span>
-        </button>
-        <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;padding:5px 12px;font-size:11px;color:#0369a1;margin:0 18px 10px;display:flex;align-items:center;gap:6px"><span>📊</span><span>薪资参考：BOSS直聘·猎聘·职友集 | 自贡地区 | 2024-2025年 | <strong>初入职场保守估计</strong>，中专学历就业难度较大，建议升大专</span></div><div class="majors-content">
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">计算机网络技术</span>
-            <span class="mj-tag ai">AI推荐</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：网络工程师·系统管理员·IT运维</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3000–4500元<br><small style='color:#94a3b8;font-size:10px'>初入运维·自贡IT岗位有限</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 极高</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">软件技术开发</span>
-            <span class="mj-tag ai">AI推荐</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：初级程序员·前端开发·测试工程师</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3500–5000元<br><small style='color:#94a3b8;font-size:10px'>初级助理·升大专竞争力更强</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 爆发</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">电子商务</span>
-            <span class="mj-tag trade">商科</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：电商运营·客服主管·跨境电商</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2800–4200元<br><small style='color:#94a3b8;font-size:10px'>底薪+提成·自贡本地有限</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 强需求</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">电子技术应用</span>
-            <span class="mj-tag tech">技术</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：电路维修·SMT操作·电子检测</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3000–4500元<br><small style='color:#94a3b8;font-size:10px'>初入检测员·技术积累后涨薪</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">安防技术</span>
-            <span class="mj-tag tech">技术</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：安防系统安装·安全工程师</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3000–4800元<br><small style='color:#94a3b8;font-size:10px'>初入·自贡本地数控/安防岗</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 增长</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div></div>
-      </div>
-      <div class="sc-footer">
-        <button class="sc-btn btn-p">📞 0813-3200131</button>
-        <button class="sc-btn btn-s">🗺 贡井区</button>
-      </div>
-    </div>
-
-    <div class="sc-card" data-score="0" data-goal="升学,就业" data-type="公办" data-district="自流井区">
-      <div class="sc-top">
-        <div class="sc-top-left">
-          <div class="sc-rank">省级重点职高 · 化工/电气特色</div>
-          <div class="sc-name">四川省盐业学校</div>
-          <div class="sc-loc">📍 自贡市自流井区（盐都特色）</div>
-        </div>
-        <span class="sc-badge public">公办</span>
-      </div>
-      <div class="sc-info">
-        <div class="si-row"><span class="si-label">录取分数线</span><span class="si-val green">无分数限制</span></div>
-        <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">2000–3000元</span></div>
-        <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年</span></div>
-        <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">省级重点 · 化工企业定向就业</span></div>
-        <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★★</span></div>
-      </div>
-      <div class="majors-section">
-        <button class="majors-toggle" onclick="toggleMajors(this)">
-          <span>📚 专业详情（4个）· 点击展开薪资与出路</span>
-          <span class="arrow">▼</span>
-        </button>
-        <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;padding:5px 12px;font-size:11px;color:#0369a1;margin:0 18px 10px;display:flex;align-items:center;gap:6px"><span>📊</span><span>薪资参考：BOSS直聘·猎聘·职友集 | 自贡地区 | 2024-2025年 | <strong>初入职场保守估计</strong>，中专学历就业难度较大，建议升大专</span></div><div class="majors-content">
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">化工生产技术</span>
-            <span class="mj-tag tech">技术</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：化工操作工·安全员·生产主管</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3500–5500元<br><small style='color:#94a3b8;font-size:10px'>初入·自贡化工/电气企业较稳定</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">电气自动化技术</span>
-            <span class="mj-tag tech">技术</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：电工·PLC编程员·自动化维护</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3500–5500元<br><small style='color:#94a3b8;font-size:10px'>持证电工·熟练后可到6000-9000</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 高增长</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">计算机应用</span>
-            <span class="mj-tag ai">AI方向</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：IT支持·办公自动化·系统运维</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2000–3500元<br><small style='color:#94a3b8;font-size:10px'>⚠️学徒期低·熟练后5000-9000</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 增长</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">会计</span>
-            <span class="mj-tag trade">商科</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：财务助理·出纳·财务专员</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary">4000–9000元</div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div></div>
-      </div>
-      <div class="sc-footer">
-        <button class="sc-btn btn-p">📞 0813-XXXX（官网查询）</button>
-        <button class="sc-btn btn-s">🗺 自流井区</button>
-      </div>
-    </div>
-
-    <div class="sc-card" data-score="0" data-goal="就业" data-type="公办" data-district="大安区">
-      <div class="sc-top">
-        <div class="sc-top-left">
-          <div class="sc-rank">公办 · 旅游美食特色</div>
-          <div class="sc-name">自贡市旅游职业高级中学</div>
-          <div class="sc-loc">📍 自贡市大安区</div>
-        </div>
-        <span class="sc-badge public">公办</span>
-      </div>
-      <div class="sc-info">
-        <div class="si-row"><span class="si-label">录取分数线</span><span class="si-val green">无分数限制</span></div>
-        <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">约2500元</span></div>
-        <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年</span></div>
-        <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">旅游/烹饪特色 · 全省知名</span></div>
-        <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★</span></div>
-      </div>
-      <div class="majors-section">
-        <button class="majors-toggle" onclick="toggleMajors(this)">
-          <span>📚 专业详情（5个）· 点击展开薪资与出路</span>
-          <span class="arrow">▼</span>
-        </button>
-        <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;padding:5px 12px;font-size:11px;color:#0369a1;margin:0 18px 10px;display:flex;align-items:center;gap:6px"><span>📊</span><span>薪资参考：BOSS直聘·猎聘·职友集 | 自贡地区 | 2024-2025年 | <strong>初入职场保守估计</strong>，中专学历就业难度较大，建议升大专</span></div><div class="majors-content">
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">中餐烹饪与营养膳食</span>
-            <span class="mj-tag service">厨艺</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：厨师·主厨·餐饮创业</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2500–4000元<br><small style='color:#94a3b8;font-size:10px'>学徒帮厨·主厨需5-8年积累</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 稳健增长</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">西餐西点</span>
-            <span class="mj-tag service">厨艺</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：西厨·烘焙师·甜品店主</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2500–4000元<br><small style='color:#94a3b8;font-size:10px'>初入·自贡本地岗位有限</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 增长</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">旅游管理</span>
-            <span class="mj-tag service">服务</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：导游·景区服务·旅行社运营</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2500–3800元<br><small style='color:#94a3b8;font-size:10px'>初入·自贡本地岗位少</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">酒店管理</span>
-            <span class="mj-tag service">服务</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：前台·客房·酒店管理培训生</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2500–3800元<br><small style='color:#94a3b8;font-size:10px'>初入·自贡本地岗位少</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">电子商务</span>
-            <span class="mj-tag trade">商科</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：美食电商·外卖代运营·短视频</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2500–4000元<br><small style='color:#94a3b8;font-size:10px'>初入·自贡本地岗位有限</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 强</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div></div>
-      </div>
-      <div class="sc-footer">
-        <button class="sc-btn btn-p">📞 0813-XXXX（官网查询）</button>
-        <button class="sc-btn btn-s">🗺 大安区</button>
-      </div>
-    </div>
-
-    <div class="sc-card" data-score="383" data-goal="就业,ai" data-type="民办" data-district="大安区">
-      <div class="sc-top">
-        <div class="sc-top-left">
-          <div class="sc-rank">民办 · AI智能机器人特色</div>
-          <div class="sc-name">自贡倍乐职业技术学校</div>
-          <div class="sc-loc">📍 大安区沙鱼坝108号</div>
-        </div>
-        <span class="sc-badge private">民办</span>
-      </div>
-      <div class="sc-info">
-        <div class="si-row"><span class="si-label">录取分数线</span><span class="si-val green">383分（特色班无要求）</span></div>
-        <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">6600–6900元</span></div>
-        <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年</span></div>
-        <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">AI智能机器人特色班 · 校企深度合作</span></div>
-        <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★</span></div>
-      </div>
-      <div class="majors-section">
-        <button class="majors-toggle" onclick="toggleMajors(this)">
-          <span>📚 专业详情（4个）· 点击展开薪资与出路</span>
-          <span class="arrow">▼</span>
-        </button>
-        <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;padding:5px 12px;font-size:11px;color:#0369a1;margin:0 18px 10px;display:flex;align-items:center;gap:6px"><span>📊</span><span>薪资参考：BOSS直聘·猎聘·职友集 | 自贡地区 | 2024-2025年 | <strong>初入职场保守估计</strong>，中专学历就业难度较大，建议升大专</span></div><div class="majors-content">
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">AI智能机器人（特色班）</span>
-            <span class="mj-tag ai">AI旗舰</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：机器人调试·智能制造·自动化工程师</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3500–5000元<br><small style='color:#94a3b8;font-size:10px'>初级助理·升大专竞争力更强</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 爆发增长</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">工业自动化</span>
-            <span class="mj-tag tech">技术</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：设备维护·PLC编程·工程师助理</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3500–5500元<br><small style='color:#94a3b8;font-size:10px'>设备辅助岗·大专后可做工程师</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 高增长</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">电子商务</span>
-            <span class="mj-tag trade">商科</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：电商运营·直播·新媒体</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2800–4200元<br><small style='color:#94a3b8;font-size:10px'>底薪+提成·自贡本地有限</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 强</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">机电一体化</span>
-            <span class="mj-tag tech">技术</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：机电维修·生产线操作·技师</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3000–5000元<br><small style='color:#94a3b8;font-size:10px'>初入操作工·熟练后6000-10000</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div></div>
-      </div>
-      <div class="sc-footer">
-        <button class="sc-btn btn-p">📞 0813-XXXX（官网查询）</button>
-        <button class="sc-btn btn-s">🗺 大安区</button>
-      </div>
-    </div>
-
-    <div class="sc-card" data-score="0" data-goal="就业" data-type="公办" data-district="沿滩区">
-      <div class="sc-top">
-        <div class="sc-top-left">
-          <div class="sc-rank">公办技工院校 · 技能证书强</div>
-          <div class="sc-name">自贡市高级技工学校</div>
-          <div class="sc-loc">📍 自贡市沿滩区</div>
-        </div>
-        <span class="sc-badge public">公办</span>
-      </div>
-      <div class="sc-info">
-        <div class="si-row"><span class="si-label">录取分数线</span><span class="si-val green">无分数限制</span></div>
-        <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">2000–3000元</span></div>
-        <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年（可取技师证）</span></div>
-        <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">技工证书全国通用 · 强就业保障</span></div>
-        <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★</span></div>
-      </div>
-      <div class="majors-section">
-        <button class="majors-toggle" onclick="toggleMajors(this)">
-          <span>📚 专业详情（5个）· 点击展开薪资与出路</span>
-          <span class="arrow">▼</span>
-        </button>
-        <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;padding:5px 12px;font-size:11px;color:#0369a1;margin:0 18px 10px;display:flex;align-items:center;gap:6px"><span>📊</span><span>薪资参考：BOSS直聘·猎聘·职友集 | 自贡地区 | 2024-2025年 | <strong>初入职场保守估计</strong>，中专学历就业难度较大，建议升大专</span></div><div class="majors-content">
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">焊接技术</span>
-            <span class="mj-tag tech">技能</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：焊工·工程焊接·高级技师</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3000–4500元<br><small style='color:#94a3b8;font-size:10px'>焊接学徒期·3-5年后5500-9000</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 高薪稀缺</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">电工电子技术</span>
-            <span class="mj-tag tech">技能</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：电工·设备维修·工程安装</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3500–5500元<br><small style='color:#94a3b8;font-size:10px'>初入·自贡化工/电气企业较稳定</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">机械加工</span>
-            <span class="mj-tag tech">技能</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：数控操作·铣工·磨工</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3000–5000元<br><small style='color:#94a3b8;font-size:10px'>初入操作工·熟练后6000-10000</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">汽车维修</span>
-            <span class="mj-tag tech">技能</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：4S店汽修技师·二手车评估师</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3500–5500元<br><small style='color:#94a3b8;font-size:10px'>初入·自贡化工/电气企业较稳定</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">工业自动化</span>
-            <span class="mj-tag ai">AI方向</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：PLC编程·设备调试·工厂自动化</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3500–5500元<br><small style='color:#94a3b8;font-size:10px'>持证电工·熟练后可到6000-9000</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 高增长</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div></div>
-      </div>
-      <div class="sc-footer">
-        <button class="sc-btn btn-p">📞 0813-XXXX（官网查询）</button>
-        <button class="sc-btn btn-s">🗺 沿滩区</button>
-      </div>
-    </div>
-
-    <div class="sc-card" data-score="532" data-goal="升学,就业" data-type="公办" data-district="荣县">
-      <div class="sc-top">
-        <div class="sc-top-left">
-          <div class="sc-rank">公办 · 荣县 · 10+专业</div>
-          <div class="sc-name">四川省荣县职业高级中学</div>
-          <div class="sc-loc">📍 自贡市荣县县城</div>
-        </div>
-        <span class="sc-badge public">公办</span>
-      </div>
-      <div class="sc-info">
-        <div class="si-row"><span class="si-label">录取分数线</span><span class="si-val red">532.6分（计算机专业）</span></div>
-        <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">2000–3000元</span></div>
-        <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年（3+2升大专）</span></div>
-        <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">10+个专业 · 3+2升大专通道</span></div>
-        <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★</span></div>
-      </div>
-      <div class="majors-section">
-        <button class="majors-toggle" onclick="toggleMajors(this)">
-          <span>📚 专业详情（6个）· 点击展开薪资与出路</span>
-          <span class="arrow">▼</span>
-        </button>
-        <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;padding:5px 12px;font-size:11px;color:#0369a1;margin:0 18px 10px;display:flex;align-items:center;gap:6px"><span>📊</span><span>薪资参考：BOSS直聘·猎聘·职友集 | 自贡地区 | 2024-2025年 | <strong>初入职场保守估计</strong>，中专学历就业难度较大，建议升大专</span></div><div class="majors-content">
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">计算机应用</span>
-            <span class="mj-tag ai">AI方向</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：IT运维·办公自动化·程序员助理</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2000–3500元<br><small style='color:#94a3b8;font-size:10px'>⚠️学徒期低·熟练后5000-9000</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 增长</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">机械加工</span>
-            <span class="mj-tag tech">技能</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：数控操作·机械工人·技师</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3000–5000元<br><small style='color:#94a3b8;font-size:10px'>初入操作工·熟练后6000-10000</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">汽车维修</span>
-            <span class="mj-tag tech">技能</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：汽修技师·4S店维修</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2000–3500元<br><small style='color:#94a3b8;font-size:10px'>⚠️学徒期低·熟练后5000-9000</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">电子商务</span>
-            <span class="mj-tag trade">商科</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：电商运营·网店管理</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2500–4000元<br><small style='color:#94a3b8;font-size:10px'>初入·自贡本地岗位有限</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 强</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">中式烹饪</span>
-            <span class="mj-tag service">厨艺</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：厨师·餐饮管理</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2500–4000元<br><small style='color:#94a3b8;font-size:10px'>学徒帮厨·主厨需年限积累</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
+        <div class="mj-item">
+          <div class="mj-head">
             <span class="mj-name">学前教育</span>
-            <span class="mj-tag service">服务</span>
+            <span class="mj-tag med">服务</span>
           </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：幼师·托育·早教老师</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>2500–3500元<br><small style='color:#94a3b8;font-size:10px'>幼师·需持教资证·竞争激烈</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
+          <div class="mj-job">💼 就业方向：幼儿园助教 · 早教机构</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2500–3500元<br><span style="font-size:10px;color:#94a3b8">自贡地区幼师薪资偏低</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 竞争大</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→幼师持证</div></div>
           </div>
-        </div></div>
-      </div>
-      <div class="sc-footer">
-        <button class="sc-btn btn-p">📞 0813-XXXX（官网查询）</button>
-        <button class="sc-btn btn-s">🗺 荣县</button>
+        </div>
       </div>
     </div>
+    <div class="sch-footer">
+      <button class="btn-phone">📞 0813-5222xxx（官网查询）</button>
+      <span class="btn-area">🗺 富顺县</span>
+      <span class="exp-badge">🎓 实验班549.5分</span>
+    </div>
+  </div>
 
-    <div class="sc-card" data-score="534" data-goal="升学,就业" data-type="民办" data-district="自流井区">
-      <div class="sc-top">
-        <div class="sc-top-left">
-          <div class="sc-rank">民办 · 1978年创建 · 中核/长安合作</div>
-          <div class="sc-name">自贡市东方职业技术学校</div>
-          <div class="sc-loc">📍 自贡市自流井区</div>
-        </div>
-        <span class="sc-badge private">民办</span>
+  <div class="sch-card" data-score="504" data-goal="升学,就业,ai" data-type="公办" data-district="自流井区">
+    <div class="sch-top">
+      <div class="sch-left">
+        <div class="rank-tag">AI时代首推 · 省级重点职高</div>
+        <div class="name">自贡职业技术学校</div>
+        <div class="loc">📍 自贡市自流井区</div>
       </div>
-      <div class="sc-info">
-        <div class="si-row"><span class="si-label">录取分数线</span><span class="si-val red">534.2分（较高）</span></div>
-        <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">5000+元</span></div>
-        <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年（2+2模式）</span></div>
-        <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">中核集团+长安汽车深度合作·工学交替</span></div>
-        <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★</span></div>
-      </div>
-      <div class="majors-section">
-        <button class="majors-toggle" onclick="toggleMajors(this)">
-          <span>📚 专业详情（4个）· 点击展开薪资与出路</span>
-          <span class="arrow">▼</span>
-        </button>
-        <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:6px;padding:5px 12px;font-size:11px;color:#0369a1;margin:0 18px 10px;display:flex;align-items:center;gap:6px"><span>📊</span><span>薪资参考：BOSS直聘·猎聘·职友集 | 自贡地区 | 2024-2025年 | <strong>初入职场保守估计</strong>，中专学历就业难度较大，建议升大专</span></div><div class="majors-content">
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">汽车制造与检测</span>
-            <span class="mj-tag tech">技术</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：长安汽车实习·质检员·技师</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3000–5000元<br><small style='color:#94a3b8;font-size:10px'>初入操作工·熟练后6000-10000</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">核工业辐射防护</span>
-            <span class="mj-tag tech">特色</span>
-          </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：核电站辅助操作·辐射检测</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3500–5000元<br><small style='color:#94a3b8;font-size:10px'>初级助理·升大专竞争力更强</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 高薪</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
-          </div>
-        </div>
-        <div class="major-item">
-          <div class="mj-header">
-            <span class="mj-name">工业机器人</span>
+      <span class="sch-badge pub">公办</span>
+    </div>
+    <div class="sch-info">
+      <div class="si-row"><span class="si-label">升学实验班</span><span class="si-val green">504.9（升学实验班）</span></div>
+      <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">2500–4000元/年</span></div>
+      <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年（实验班可技能高考）</span></div>
+      <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">省级重点 · 专业全 · 就业率高</span></div>
+      <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★★★</span></div>
+    </div>
+    <div class="majors-wrap">
+      <button class="majors-btn" onclick="toggleMajors(this)">
+        <span>📚 专业详情（5个）· 点击展开薪资与出路</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="majors-content">
+        <div class="data-src">📊 升学班分数线来源：2025年自贡中考官方公告；专业信息参考学校官网，以学校招生简章为准</div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">计算机网络技术</span>
             <span class="mj-tag ai">AI方向</span>
           </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：机器人维护·自动化调试</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary">8000–18000元</div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">⬆️ 爆发</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
+          <div class="mj-job">💼 就业方向：网络工程师 · 系统运维 · 云计算助理</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3000–5000元<br><span style="font-size:10px;color:#94a3b8">初入 · 3-5年约5500-9000</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 高增长</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→网络工程师</div></div>
           </div>
         </div>
-        <div class="major-item">
-          <div class="mj-header">
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">机械制造与自动化</span>
+            <span class="mj-tag tech">技术</span>
+          </div>
+          <div class="mj-job">💼 就业方向：数控操作 · 设备维护 · 机械装配</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3500–6000元<br><span style="font-size:10px;color:#94a3b8">自贡制造业需求稳定</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 稳定高薪</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→工程师</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">焊接技术</span>
+            <span class="mj-tag trade">技工</span>
+          </div>
+          <div class="mj-job">💼 就业方向：焊工 · 设备焊接 · 工程焊接</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3000–4500元<br><span style="font-size:10px;color:#94a3b8">初入 · 熟练后5500-9000</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 缺口大</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">学徒→技师→高级技工</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
             <span class="mj-name">数控技术</span>
             <span class="mj-tag tech">技术</span>
           </div>
-          <div style="font-size:13px;color:#475569;margin-bottom:8px">💼 就业方向：数控操作·精密加工·高级技师</div>
-          <div class="mj-row">
-            <div class="mj-cell"><div class="mc-label">💰 月薪范围</div><div class="mc-val salary" style='font-size:12px'>3000–4500元<br><small style='color:#94a3b8;font-size:10px'>初入运维·自贡IT岗位有限</small></div></div>
-            <div class="mj-cell"><div class="mc-label">📈 市场前景</div><div class="mc-val">→ 稳定</div></div>
-            <div class="mj-cell"><div class="mc-label">🎓 晋升路径</div><div class="mc-val" style="font-size:11px;color:#64748b">职高→大专→工程师</div></div>
+          <div class="mj-job">💼 就业方向：数控操作员 · CNC工程师</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3500–5500元<br><span style="font-size:10px;color:#94a3b8">自贡机械企业需求量大</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 高薪前景</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→CNC工程师</div></div>
           </div>
-        </div></div>
-      </div>
-      <div class="sc-footer">
-        <button class="sc-btn btn-p">📞 0813-XXXX（官网查询）</button>
-        <button class="sc-btn btn-s">🗺 自流井区</button>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">会计</span>
+            <span class="mj-tag med">商科</span>
+          </div>
+          <div class="mj-job">💼 就业方向：出纳 · 会计助理 · 财务文员</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2500–3500元<br><span style="font-size:10px;color:#94a3b8">中专会计含金量低，建议升专</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 竞争激烈</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→持CPA证</div></div>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="sch-footer">
+      <button class="btn-phone">📞 0813-2351xxx（官网查询）</button>
+      <span class="btn-area">🗺 自流井区</span>
+      <span class="exp-badge">🎓 实验班504.9分</span>
+    </div>
   </div>
-</div>
 
-<!-- ===== SECTION 4: 综合对比 ===== -->
+  <div class="sch-card" data-score="472" data-goal="升学,就业,ai" data-type="公办" data-district="自流井区">
+    <div class="sch-top">
+      <div class="sch-left">
+        <div class="rank-tag">院校附属中专 · 新兴专业齐全</div>
+        <div class="name">自贡职业技术学院中专部</div>
+        <div class="loc">📍 自贡市自流井区</div>
+      </div>
+      <span class="sch-badge pub">公办</span>
+    </div>
+    <div class="sch-info">
+      <div class="si-row"><span class="si-label">升学实验班</span><span class="si-val green">472.1（升学实验班）</span></div>
+      <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">3000–5000元/年（各专业不同）</span></div>
+      <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年（实验班可升专/本）</span></div>
+      <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">院校附属 · 无人机/民航/新能源等新兴专业</span></div>
+      <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★★☆</span></div>
+    </div>
+    <div class="majors-wrap">
+      <button class="majors-btn" onclick="toggleMajors(this)">
+        <span>📚 专业详情（9个）· 点击展开薪资与出路</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="majors-content">
+        <div class="data-src">📊 专业信息来源：自贡职业技术学院中专部2026年招生简章（微信公众号官方发布）；分数线来源：2025年自贡中考官方公告</div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">计算机应用</span>
+            <span class="mj-tag tech">技术</span>
+          </div>
+          <div class="mj-job">💼 就业方向：IT支持 · 网络运维 · 程序员助理</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2800–4500元<br><span style="font-size:10px;color:#94a3b8">3-5年约5000-8000</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 高增长</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→工程师</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">无人机技术应用</span>
+            <span class="mj-tag ai">AI热门</span>
+          </div>
+          <div class="mj-job">💼 就业方向：无人机操手 · 巡检员 · 航拍技术员</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3000–5000元<br><span style="font-size:10px;color:#94a3b8">新兴行业，增长快</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 快速增长</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→无人机工程师</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">民航运输</span>
+            <span class="mj-tag hot">热门</span>
+          </div>
+          <div class="mj-job">💼 就业方向：民航地勤 · 机场服务 · 货运助理</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3000–4500元<br><span style="font-size:10px;color:#94a3b8">门槛较高，形象要求</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 民航复苏</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→民航岗</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">新能源汽车</span>
+            <span class="mj-tag ai">AI方向</span>
+          </div>
+          <div class="mj-job">💼 就业方向：新能源维修技师 · 充电桩维护</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3000–5000元<br><span style="font-size:10px;color:#94a3b8">行业增速快</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 政策驱动</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">学徒→技师→新能源工程师</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">轨道交通运营管理</span>
+            <span class="mj-tag hot">热门</span>
+          </div>
+          <div class="mj-job">💼 就业方向：地铁站务 · 铁路客运 · 调度助理</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3000–4500元<br><span style="font-size:10px;color:#94a3b8">国企稳定，竞争大</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 稳定</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→铁路国企</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">艺术设计</span>
+            <span class="mj-tag art">艺术</span>
+          </div>
+          <div class="mj-job">💼 就业方向：平面设计 · 广告制作 · 包装设计</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2500–4000元<br><span style="font-size:10px;color:#94a3b8">自贡地区设计薪资偏低</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 竞争激烈</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→设计师</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">网络营销</span>
+            <span class="mj-tag hot">热门</span>
+          </div>
+          <div class="mj-job">💼 就业方向：电商运营 · SEO · 新媒体</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2800–4000元<br><span style="font-size:10px;color:#94a3b8">底薪+提成模式</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 竞争大</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→运营主管</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">数字媒体技术</span>
+            <span class="mj-tag ai">AI方向</span>
+          </div>
+          <div class="mj-job">💼 就业方向：短视频制作 · 直播运营 · 内容创作</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2500–4000元<br><span style="font-size:10px;color:#94a3b8">初入工资低，需积累作品</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 内容需求增长</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→内容创作者</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">宠物养护与经营</span>
+            <span class="mj-tag hot">新兴</span>
+          </div>
+          <div class="mj-job">💼 就业方向：宠物美容师 · 宠物医院助理 · 宠物店运营</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2500–3800元<br><span style="font-size:10px;color:#94a3b8">自贡宠物市场逐步发展</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 新兴增长</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→宠物医生</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sch-footer">
+      <button class="btn-phone">📞 官网查询（自贡职业技术学院招生处）</button>
+      <span class="btn-area">🗺 自流井区</span>
+      <span class="exp-badge">🎓 实验班472.1分</span>
+    </div>
+  </div>
+
+  <div class="sch-card" data-score="429" data-goal="就业,升学" data-type="公办" data-district="大安区">
+    <div class="sch-top">
+      <div class="sch-left">
+        <div class="rank-tag">旅游热门专业 · 自贡市中心</div>
+        <div class="name">自贡市旅游职业学校</div>
+        <div class="loc">📍 自贡市大安区</div>
+      </div>
+      <span class="sch-badge pub">公办</span>
+    </div>
+    <div class="sch-info">
+      <div class="si-row"><span class="si-label">升学实验班</span><span class="si-val green">429.9（升学实验班）</span></div>
+      <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">2000–3500元/年</span></div>
+      <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年</span></div>
+      <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">旅游类专业强 · 实习机会多 · 市区位置好</span></div>
+      <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★★☆</span></div>
+    </div>
+    <div class="majors-wrap">
+      <button class="majors-btn" onclick="toggleMajors(this)">
+        <span>📚 专业详情（4个）· 点击展开薪资与出路</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="majors-content">
+        <div class="data-src">📊 升学班分数线来源：2025年自贡中考官方公告；专业信息参考学校官网公开资料，以招生简章为准</div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">旅游服务与管理</span>
+            <span class="mj-tag hot">热门</span>
+          </div>
+          <div class="mj-job">💼 就业方向：导游助理 · 景区服务 · 酒店前台</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2500–3800元<br><span style="font-size:10px;color:#94a3b8">旺季收入高，淡旺季明显</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 旅游复苏</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→导游持证</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">餐饮管理</span>
+            <span class="mj-tag hot">热门</span>
+          </div>
+          <div class="mj-job">💼 就业方向：餐厅服务 · 餐饮助理 · 厨师学徒</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2500–3500元<br><span style="font-size:10px;color:#94a3b8">厨师工资提升空间大</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 稳定需求</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→餐饮经理</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">酒店服务与管理</span>
+            <span class="mj-tag hot">热门</span>
+          </div>
+          <div class="mj-job">💼 就业方向：客房服务员 · 前台接待 · 大堂助理</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2500–3500元<br><span style="font-size:10px;color:#94a3b8">自贡酒店业薪资一般</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 稳定</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→酒店主管</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">烹饪</span>
+            <span class="mj-tag trade">技工</span>
+          </div>
+          <div class="mj-job">💼 就业方向：厨师 · 糕点师 · 食品加工</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2800–4500元<br><span style="font-size:10px;color:#94a3b8">技术越高薪资越高</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 稳定需求</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">学徒→厨师→主厨</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sch-footer">
+      <button class="btn-phone">📞 0813-2231xxx（官网查询）</button>
+      <span class="btn-area">🗺 大安区</span>
+      <span class="exp-badge">🎓 实验班429.9分</span>
+    </div>
+  </div>
+
+  <div class="sch-card" data-score="453" data-goal="就业" data-type="公办" data-district="贡井区">
+    <div class="sch-top">
+      <div class="sch-left">
+        <div class="rank-tag">技工类首选 · 就业对口强</div>
+        <div class="name">自贡市技工学校</div>
+        <div class="loc">📍 自贡市贡井区</div>
+      </div>
+      <span class="sch-badge pub">公办</span>
+    </div>
+    <div class="sch-info">
+      <div class="si-row"><span class="si-label">升学实验班</span><span class="si-val green">453.4（升学实验班）</span></div>
+      <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">2000–3000元/年</span></div>
+      <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年（技工证+中专证）</span></div>
+      <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">技工证含金量高 · 对口就业率强 · 学费低</span></div>
+      <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★★☆</span></div>
+    </div>
+    <div class="majors-wrap">
+      <button class="majors-btn" onclick="toggleMajors(this)">
+        <span>📚 专业详情（4个）· 点击展开薪资与出路</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="majors-content">
+        <div class="data-src">📊 升学班分数线来源：2025年自贡中考官方公告；专业信息参考学校公开资料，以招生简章为准</div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">汽车检测与维修</span>
+            <span class="mj-tag trade">技工</span>
+          </div>
+          <div class="mj-job">💼 就业方向：汽车维修技师 · 4S店服务 · 检测员</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2000–3500元<br><span style="font-size:10px;color:#94a3b8">学徒期极低，3年后4000+</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 稳定需求</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">学徒→技师→高级技工</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">电气自动化</span>
+            <span class="mj-tag tech">技术</span>
+          </div>
+          <div class="mj-job">💼 就业方向：电工 · 自动化设备维护 · 仪表工</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3000–5500元<br><span style="font-size:10px;color:#94a3b8">有证工资高</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 工业需求大</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">学徒→电工→工程师</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">机械加工</span>
+            <span class="mj-tag trade">技工</span>
+          </div>
+          <div class="mj-job">💼 就业方向：车床操作 · 机械制造 · 设备检修</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3000–5000元<br><span style="font-size:10px;color:#94a3b8">需吃苦耐劳</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 制造业需求</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">操作工→技师→班组长</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">建筑装饰</span>
+            <span class="mj-tag trade">技工</span>
+          </div>
+          <div class="mj-job">💼 就业方向：装修工 · 施工员 · 室内设计助理</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3500–6000元<br><span style="font-size:10px;color:#94a3b8">有技术工资高</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 旺盛需求</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">学工→技师→包工头</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sch-footer">
+      <button class="btn-phone">📞 0813-2281xxx（官网查询）</button>
+      <span class="btn-area">🗺 贡井区</span>
+      <span class="exp-badge">🎓 实验班453.4分</span>
+    </div>
+  </div>
+
+  <div class="sch-card" data-score="383" data-goal="就业,ai" data-type="民办" data-district="沿滩区">
+    <div class="sch-top">
+      <div class="sch-left">
+        <div class="rank-tag">分数最低 · AI新兴专业</div>
+        <div class="name">自贡倍乐职业学校</div>
+        <div class="loc">📍 自贡市沿滩区</div>
+      </div>
+      <span class="sch-badge prv">民办</span>
+    </div>
+    <div class="sch-info">
+      <div class="si-row"><span class="si-label">升学实验班</span><span class="si-val green">383.0（升学实验班·全市最低）</span></div>
+      <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">5000–8000元/年（民办）</span></div>
+      <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年</span></div>
+      <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">录取门槛全市最低 · 民办 · AI相关专业</span></div>
+      <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★☆☆</span></div>
+    </div>
+    <div class="majors-wrap">
+      <button class="majors-btn" onclick="toggleMajors(this)">
+        <span>📚 专业详情（3个）· 点击展开薪资与出路</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="majors-content">
+        <div class="data-src">📊 升学班分数线来源：2025年自贡中考官方公告（383.0分，全市最低）；专业信息参考学校公开资料，以招生简章为准</div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">计算机应用</span>
+            <span class="mj-tag tech">技术</span>
+          </div>
+          <div class="mj-job">💼 就业方向：IT支持 · 数据录入 · 办公软件</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2500–4000元<br><span style="font-size:10px;color:#94a3b8">民办背景就业竞争力弱些</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 有增长</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→工程师</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">电子商务</span>
+            <span class="mj-tag hot">热门</span>
+          </div>
+          <div class="mj-job">💼 就业方向：网店运营 · 直播助手 · 新媒体</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2500–3800元<br><span style="font-size:10px;color:#94a3b8">底薪+提成</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 竞争大</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">运营助理→运营主管</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">数字媒体</span>
+            <span class="mj-tag ai">AI方向</span>
+          </div>
+          <div class="mj-job">💼 就业方向：短视频 · 直播 · 内容制作</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2500–3800元<br><span style="font-size:10px;color:#94a3b8">需作品积累</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 内容增长</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→创作者</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sch-footer">
+      <button class="btn-phone">📞 官网查询</button>
+      <span class="btn-area">🗺 沿滩区</span>
+      <span class="exp-badge">🎓 实验班383分·全市最低</span>
+    </div>
+  </div>
+
+  <div class="sch-card" data-score="404" data-goal="就业" data-type="公办" data-district="自流井区">
+    <div class="sch-top">
+      <div class="sch-left">
+        <div class="rank-tag">盐化工特色 · 自贡本地历史名校</div>
+        <div class="name">自贡市盐业技工学校</div>
+        <div class="loc">📍 自贡市自流井区</div>
+      </div>
+      <span class="sch-badge pub">公办</span>
+    </div>
+    <div class="sch-info">
+      <div class="si-row"><span class="si-label">升学实验班</span><span class="si-val green">404.0（升学实验班）</span></div>
+      <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">2000–3500元/年</span></div>
+      <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年（技工证+中专证）</span></div>
+      <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">盐化工特色专业 · 技工证含金量高 · 本地就业对口</span></div>
+      <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★★☆</span></div>
+    </div>
+    <div class="majors-wrap">
+      <button class="majors-btn" onclick="toggleMajors(this)">
+        <span>📚 专业详情（3个）· 点击展开薪资与出路</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="majors-content">
+        <div class="data-src">📊 升学班分数线来源：2025年自贡中考官方公告；专业信息参考学校公开资料，以招生简章为准</div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">化工工艺</span>
+            <span class="mj-tag tech">技术</span>
+          </div>
+          <div class="mj-job">💼 就业方向：化工操作员 · 盐化工厂工人 · 质检员</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3500–6000元<br><span style="font-size:10px;color:#94a3b8">化工有岗位工资高</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 本地需求稳定</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">操作工→技师→班长</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">机械制造</span>
+            <span class="mj-tag trade">技工</span>
+          </div>
+          <div class="mj-job">💼 就业方向：机械操作 · 设备维护 · 钳工</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3000–5000元<br><span style="font-size:10px;color:#94a3b8">吃苦能力要求高</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 制造业需求</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">操作工→技师→工程师</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">电气自动化</span>
+            <span class="mj-tag tech">技术</span>
+          </div>
+          <div class="mj-job">💼 就业方向：电工 · 电气维护 · PLC操作</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3000–5500元<br><span style="font-size:10px;color:#94a3b8">有证工资明显提升</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 工业自动化</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">电工→高级技工→工程师</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sch-footer">
+      <button class="btn-phone">📞 0813-2290xxx（官网查询）</button>
+      <span class="btn-area">🗺 自流井区</span>
+      <span class="exp-badge">🎓 实验班404分</span>
+    </div>
+  </div>
+
+  <div class="sch-card" data-score="532" data-goal="升学,就业" data-type="公办" data-district="荣县">
+    <div class="sch-top">
+      <div class="sch-left">
+        <div class="rank-tag">荣县地区首选 · 省级示范</div>
+        <div class="name">荣县职业技术学校</div>
+        <div class="loc">📍 自贡市荣县</div>
+      </div>
+      <span class="sch-badge pub">公办</span>
+    </div>
+    <div class="sch-info">
+      <div class="si-row"><span class="si-label">升学实验班</span><span class="si-val green">532.6（升学实验班）</span></div>
+      <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">2000–3500元/年</span></div>
+      <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年（可升大专）</span></div>
+      <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">荣县地区首选 · 省级示范 · 实习企业多</span></div>
+      <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★★☆</span></div>
+    </div>
+    <div class="majors-wrap">
+      <button class="majors-btn" onclick="toggleMajors(this)">
+        <span>📚 专业详情（4个）· 点击展开薪资与出路</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="majors-content">
+        <div class="data-src">📊 升学班分数线来源：2025年自贡中考官方公告；专业信息参考学校公开资料，以招生简章为准</div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">机械制造与自动化</span>
+            <span class="mj-tag tech">技术</span>
+          </div>
+          <div class="mj-job">💼 就业方向：数控操作 · 机械装配 · 设备维护</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3500–5500元<br><span style="font-size:10px;color:#94a3b8">荣县企业需求量大</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 稳定需求</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→工程师</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">电子技术</span>
+            <span class="mj-tag tech">技术</span>
+          </div>
+          <div class="mj-job">💼 就业方向：电子设备装配 · 元器件检测</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2800–4500元<br><span style="font-size:10px;color:#94a3b8">—</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 稳定</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">操作工→技师→工程师</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">计算机应用</span>
+            <span class="mj-tag tech">技术</span>
+          </div>
+          <div class="mj-job">💼 就业方向：IT支持 · 网络运维 · 文员</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2800–4500元<br><span style="font-size:10px;color:#94a3b8">—</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 持续增长</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→工程师</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">汽车维修</span>
+            <span class="mj-tag trade">技工</span>
+          </div>
+          <div class="mj-job">💼 就业方向：汽车维修 · 4S店技师</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2000–3500元<br><span style="font-size:10px;color:#94a3b8">学徒期极低</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 稳定</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">学徒→技师→班长</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sch-footer">
+      <button class="btn-phone">📞 0813-5391xxx（官网查询）</button>
+      <span class="btn-area">🗺 荣县</span>
+      <span class="exp-badge">🎓 实验班532.6分</span>
+    </div>
+  </div>
+
+  <div class="sch-card" data-score="534" data-goal="升学,就业" data-type="民办" data-district="自流井区">
+    <div class="sch-top">
+      <div class="sch-left">
+        <div class="rank-tag">东锅技校背景 · 校企合作强</div>
+        <div class="name">自贡市东方职业技术学校</div>
+        <div class="loc">📍 自贡市自流井区</div>
+      </div>
+      <span class="sch-badge prv">民办</span>
+    </div>
+    <div class="sch-info">
+      <div class="si-row"><span class="si-label">升学实验班</span><span class="si-val green">534.2（升学实验班）</span></div>
+      <div class="si-row"><span class="si-label">学费/年</span><span class="si-val orange">5000–9000元/年（民办）</span></div>
+      <div class="si-row"><span class="si-label">就读年限</span><span class="si-val">3年（就业班+升学实验班）</span></div>
+      <div class="si-row"><span class="si-label">学校特色</span><span class="si-val blue">原东锅技校 · 校企合作 · 中核/长安合作</span></div>
+      <div class="si-row"><span class="si-label">综合推荐</span><span class="si-val" style="color:#f59e0b">★★★★☆</span></div>
+    </div>
+    <div class="majors-wrap">
+      <button class="majors-btn" onclick="toggleMajors(this)">
+        <span>📚 专业详情（5个）· 点击展开薪资与出路</span>
+        <span class="arrow">▼</span>
+      </button>
+      <div class="majors-content">
+        <div class="data-src">📊 咨询热线、招生信息来源：自贡市东方职业技术学校官方微信公众号2026年招生简章；分数线来源：2025年自贡中考官方公告</div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">机械制造与自动化</span>
+            <span class="mj-tag tech">技术</span>
+          </div>
+          <div class="mj-job">💼 就业方向：数控操作 · 机械装配 · 设备维护</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3500–6000元<br><span style="font-size:10px;color:#94a3b8">中核/长安合作企业定向班</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 高薪出路</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">定向→企业技师→工程师</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">焊接技术</span>
+            <span class="mj-tag trade">技工</span>
+          </div>
+          <div class="mj-job">💼 就业方向：焊工 · 设备焊接</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3000–4500元<br><span style="font-size:10px;color:#94a3b8">初入 · 熟练后5500-9000</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 缺口大</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">学徒→高级技工</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">计算机应用</span>
+            <span class="mj-tag tech">技术</span>
+          </div>
+          <div class="mj-job">💼 就业方向：网络运维 · IT支持 · 程序员助理</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2800–4500元<br><span style="font-size:10px;color:#94a3b8">—</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 持续增长</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">职高→大专→工程师</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">汽车检测与维修</span>
+            <span class="mj-tag trade">技工</span>
+          </div>
+          <div class="mj-job">💼 就业方向：汽车维修 · 4S店技师</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">2000–3500元<br><span style="font-size:10px;color:#94a3b8">学徒期极低</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">→ 稳定</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">学徒→技师→班长</div></div>
+          </div>
+        </div>
+        <div class="mj-item">
+          <div class="mj-head">
+            <span class="mj-name">电气自动化</span>
+            <span class="mj-tag tech">技术</span>
+          </div>
+          <div class="mj-job">💼 就业方向：电工 · 自动化设备维护</div>
+          <div class="mj-stats">
+            <div class="mj-stat"><div class="sl">💰 月薪参考</div><div class="sv sal">3000–5500元<br><span style="font-size:10px;color:#94a3b8">有证工资高</span></div></div>
+            <div class="mj-stat"><div class="sl">📈 市场前景</div><div class="sv">⬆️ 工业需求</div></div>
+            <div class="mj-stat"><div class="sl">🎓 晋升路径</div><div class="sv" style="font-size:11px">电工→高级技工→工程师</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sch-footer">
+      <button class="btn-phone">📞 0813-2107885</button>
+      <span class="btn-area">🗺 自流井区</span>
+      <span class="exp-badge">🎓 实验班534.2分</span>
+    </div>
+  </div>
+
+</div><!-- end #schoolGrid -->
+
+<!-- ====== 就业形势警示 ====== -->
 <div class="section">
-  <h2 class="section-title"><span class="icon">📊</span>9校综合对比一览</h2>
-  <p class="section-desc">一表快速比较核心指标，辅助决策</p>
-  <div class="tbl-wrap">
-  <table>
-    <thead><tr>
-      <th>学校名称</th><th>性质</th><th>区域</th><th>分数要求</th><th>学费/年</th>
-      <th>AI/科技专业</th><th>综合推荐</th>
-    </tr></thead>
-    <tbody><tr>
-      <td><strong>富顺职业技术学校</strong></td>
-      <td><span style="color:#059669;font-weight:700">公办</span></td>
-      <td>富顺县</td>
-      <td><span class="chip chip-free">无限制</span></td>
-      <td>2000–3500元</td>
-      <td style="color:#7c3aed">电子商务</td>
-      <td>★★★★★</td>
-    </tr>
-<tr>
-      <td><strong>自贡职业技术学校</strong></td>
-      <td><span style="color:#059669;font-weight:700">公办</span></td>
-      <td>大安区</td>
-      <td><span class="chip chip-free">无限制</span></td>
-      <td>2000–3500元</td>
-      <td style="color:#7c3aed">数字媒体技术、工业机器人技术</td>
-      <td>★★★★★</td>
-    </tr>
-<tr>
-      <td><strong>自贡市电子信息职业技术学校</strong></td>
-      <td><span style="color:#059669;font-weight:700">公办</span></td>
-      <td>贡井区</td>
-      <td><span class="chip chip-free">无限制</span></td>
-      <td>2000–3500元</td>
-      <td style="color:#7c3aed">计算机网络技术、软件技术开发</td>
-      <td>★★★★★</td>
-    </tr>
-<tr>
-      <td><strong>四川省盐业学校</strong></td>
-      <td><span style="color:#059669;font-weight:700">公办</span></td>
-      <td>自流井区</td>
-      <td><span class="chip chip-free">无限制</span></td>
-      <td>2000–3000元</td>
-      <td style="color:#7c3aed">计算机应用</td>
-      <td>★★★★</td>
-    </tr>
-<tr>
-      <td><strong>自贡市旅游职业高级中学</strong></td>
-      <td><span style="color:#059669;font-weight:700">公办</span></td>
-      <td>大安区</td>
-      <td><span class="chip chip-free">无限制</span></td>
-      <td>约2500元</td>
-      <td style="color:#7c3aed">—</td>
-      <td>★★★</td>
-    </tr>
-<tr>
-      <td><strong>自贡倍乐职业技术学校</strong></td>
-      <td><span style="color:#d97706;font-weight:700">民办</span></td>
-      <td>大安区</td>
-      <td><span class="chip chip-med">383</span></td>
-      <td><span style="color:#dc2626">6600–6900</span>元</td>
-      <td style="color:#7c3aed">AI智能机器人（特色班）</td>
-      <td>★★★</td>
-    </tr>
-<tr>
-      <td><strong>自贡市高级技工学校</strong></td>
-      <td><span style="color:#059669;font-weight:700">公办</span></td>
-      <td>沿滩区</td>
-      <td><span class="chip chip-free">无限制</span></td>
-      <td>2000–3000元</td>
-      <td style="color:#7c3aed">工业自动化</td>
-      <td>★★★</td>
-    </tr>
-<tr>
-      <td><strong>四川省荣县职业高级中学</strong></td>
-      <td><span style="color:#059669;font-weight:700">公办</span></td>
-      <td>荣县</td>
-      <td><span class="chip chip-high">532</span></td>
-      <td>2000–3000元</td>
-      <td style="color:#7c3aed">计算机应用</td>
-      <td>★★★</td>
-    </tr>
-<tr>
-      <td><strong>自贡市东方职业技术学校</strong></td>
-      <td><span style="color:#d97706;font-weight:700">民办</span></td>
-      <td>自流井区</td>
-      <td><span class="chip chip-high">534</span></td>
-      <td>5000+元</td>
-      <td style="color:#7c3aed">工业机器人</td>
-      <td>★★</td>
-    </tr></tbody>
-  </table>
+  <div class="sec-title">⚠️ 真实就业形势 · 中专学历现状</div>
+  <div class="sec-desc">以下数据来源：BOSS直聘·猎聘·职友集 | 自贡地区 | 2024–2025年 | 请理性参考</div>
+
+  <div class="warn-grid">
+    <div class="warn-card r">
+      <h4>🚫 中专学历的真实困境</h4>
+      <div class="warn-item">🤖 AI替代：数据录入、基础客服等岗位快速消失</div>
+      <div class="warn-item">📉 薪资天花板低：自贡地区中专生初入2500–3500元</div>
+      <div class="warn-item">📊 就业难度大：大量岗位要求专科及以上学历</div>
+      <div class="warn-item">🏭 环境较差：技工类工作工地/厂房环境，体力消耗大</div>
+      <div class="warn-item">⏰ 晋升困难：无学历背书，晋升到主管需要更长时间</div>
+    </div>
+    <div class="warn-card g">
+      <h4>✅ 职高升大专是最佳出路</h4>
+      <div class="warn-item">🎓 升学实验班→技能高考→大专/本科</div>
+      <div class="warn-item">📈 大专学历就业竞争力显著提升</div>
+      <div class="warn-item">💼 大专生初入岗位薪资约3500–5500元</div>
+      <div class="warn-item">🔧 技能+学历双证，抗AI替代能力更强</div>
+      <div class="warn-item">💡 选好专业+持续学习，普通人也能逆袭</div>
+    </div>
+  </div>
+
+  <div style="margin-top:16px">
+    <div style="font-size:13px;font-weight:700;color:var(--text2);margin-bottom:10px">自贡地区各类岗位初入薪资对比（参考BOSS直聘/猎聘 2024-2025）</div>
+    <div style="margin-bottom:8px">
+      <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px"><span>大学本科（普高→高考）</span><span class="hl-green">4500–7000元</span></div>
+      <div class="prog-bar"><div class="prog-fill" style="width:90%;background:var(--green)"></div></div>
+    </div>
+    <div style="margin-bottom:8px">
+      <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px"><span>大专毕业（职高升学→技能高考）</span><span class="hl-green">3500–5500元</span></div>
+      <div class="prog-bar"><div class="prog-fill" style="width:70%;background:#22c55e"></div></div>
+    </div>
+    <div style="margin-bottom:8px">
+      <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px"><span>中专技工（焊接/数控/电气等）</span><span class="hl-orange">3000–5500元</span></div>
+      <div class="prog-bar"><div class="prog-fill" style="width:55%;background:var(--orange)"></div></div>
+    </div>
+    <div style="margin-bottom:8px">
+      <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px"><span>中专普通岗位（文职/服务/零售）</span><span class="hl-red">2500–3500元</span></div>
+      <div class="prog-bar"><div class="prog-fill" style="width:35%;background:var(--red)"></div></div>
+    </div>
   </div>
 </div>
 
-<!-- ===== SECTION 5: 地图 ===== -->
+<!-- ====== 激励区 ====== -->
 <div class="section">
-  <h2 class="section-title"><span class="icon">🗺</span>自贡市职高分布地图</h2>
-  <p class="section-desc">点击区域卡片，可快速筛选该区学校</p>
-  <div class="map-wrap">
-    <div class="map-title">📍 6个区县职高分布概览</div>
-    <div class="district-grid">
-      <div class="dc dc-bl" onclick="filterDist('大安区')" id="dc-大安区">
-        <div class="dc-name">大安区</div>
-        <div class="dc-count">3所</div>
-        <div class="dc-schools">自贡职技·旅游职高·倍乐</div>
-      </div>
-      <div class="dc dc-gr" onclick="filterDist('自流井区')" id="dc-自流井区">
-        <div class="dc-name">自流井区</div>
-        <div class="dc-count">2所</div>
-        <div class="dc-schools">盐业学校·东方职技</div>
-      </div>
-      <div class="dc dc-or" onclick="filterDist('贡井区')" id="dc-贡井区">
-        <div class="dc-name">贡井区</div>
-        <div class="dc-count">1所</div>
-        <div class="dc-schools">电子信息职校(AI推荐)</div>
-      </div>
-      <div class="dc dc-pu" onclick="filterDist('沿滩区')" id="dc-沿滩区">
-        <div class="dc-name">沿滩区</div>
-        <div class="dc-count">1所</div>
-        <div class="dc-schools">高级技工学校</div>
-      </div>
-      <div class="dc dc-ye" onclick="filterDist('荣县')" id="dc-荣县">
-        <div class="dc-name">荣县</div>
-        <div class="dc-count">1所</div>
-        <div class="dc-schools">荣县职业高级中学</div>
-      </div>
-      <div class="dc dc-re" onclick="filterDist('富顺县')" id="dc-富顺县">
-        <div class="dc-name">富顺县</div>
-        <div class="dc-count">1所</div>
-        <div class="dc-schools">富顺职业技术学校</div>
-      </div>
+  <div class="sec-title">💪 读书才是出路 · AI时代更要有学历</div>
+  <div class="sec-desc">这不是鸡汤，这是2025年的真实数据告诉我们的</div>
+  <div class="moti-grid">
+    <div class="moti-card p">
+      <h4>🤖 AI时代 没有学历更危险</h4>
+      <p>重复性劳动最先被AI替代。有学历的人能做AI的管理者，没学历的人更容易成为被替代的对象。</p>
     </div>
-    <div class="map-hint">单击区域筛选该区学校 · 双击地图区域重置全部</div>
+    <div class="moti-card b">
+      <h4>📈 差距还没拉开 · 现在努力还来得及</h4>
+      <p>300–400分距市级普高线仅30–130分。3–6个月的系统冲刺，每科稳定提升15–25分，目标完全可达。</p>
+    </div>
+    <div class="moti-card g">
+      <h4>🎓 职高也有上升通道</h4>
+      <p>职高升学实验班→技能高考→大专/本科，同样可以拿到大学学历。选好学校+全力以赴升学，职高也能走出好前途。</p>
+    </div>
+    <div class="moti-card p" style="background:var(--yellow-light);border-color:var(--yellow)">
+      <h4>⏰ 每一分都值得争取</h4>
+      <p>中考的失利不等于人生的失败，但放弃努力才是。无论选哪条路，持续学习、提升技能，都能让未来更有保障。</p>
+    </div>
   </div>
 </div>
 
-<!-- ===== SECTION 6: AI赛道 ===== -->
+<!-- ====== 行动计划 ====== -->
 <div class="section">
-  <h2 class="section-title"><span class="icon">🤖</span>AI时代职业赛道（男生专属）</h2>
-  <p class="section-desc">选对赛道，职高生也能在AI时代站稳脚跟</p>
-  <div class="ai-paths">
-    <div class="apc">
-      <div class="apc-icon">🤖</div>
-      <div class="apc-title">AI+工业自动化</div>
-      <div class="apc-path">职高→机器人/PLC/电气→自动化工厂调试工程师→高级工程师</div>
-      <div class="apc-salary">自贡初入 3500–5500元
-        <br><small style="font-size:11px;opacity:.8">成都/省外3-5年可到10000+</small></div>
-    </div>
-    <div class="apc t-pu">
-      <div class="apc-icon">💻</div>
-      <div class="apc-title">计算机网络/运维</div>
-      <div class="apc-path">职高→HCIA/思科证书→网络工程师/IT运维→架构师</div>
-      <div class="apc-salary">自贡初入 3000–5000元
-        <br><small style="font-size:11px;opacity:.8">成都/省外3-5年可到8000-15000</small></div>
-    </div>
-    <div class="apc t-gr">
-      <div class="apc-icon">🛒</div>
-      <div class="apc-title">直播电商/新媒体</div>
-      <div class="apc-path">职高→电子商务→短视频运营→主播/电商老板</div>
-      <div class="apc-salary">自贡初入 2800–4000元
-        <br><small style="font-size:11px;opacity:.8">有提成·自贡本地天花板低</small></div>
-    </div>
-    <div class="apc t-or">
-      <div class="apc-icon">⚙️</div>
-      <div class="apc-title">数控/精密制造</div>
-      <div class="apc-path">职高→机械/数控→中级技师→精密零件·年薪可翻倍</div>
-      <div class="apc-salary">自贡初入 3000–5000元
-        <br><small style="font-size:11px;opacity:.8">熟练技师3-5年后6000-12000</small></div>
-    </div>
-  </div>
-  <div class="tl">
-    <div class="tl-item">
-      <div class="tl-lbl">第1–3年 · 职高就读</div>
-      <div class="tl-title">打基础：选对专业 · 拿证书 · 建作品集</div>
-      <div class="tl-desc">选AI/计算机/自动化方向 → 备考HCIA/PLC/电工证等职业资格证 → 参加省级技能大赛 → 备战对口高考升大专</div>
-    </div>
-    <div class="tl-item t2">
-      <div class="tl-lbl">第3–5年 · 升学或初步就业</div>
-      <div class="tl-title">升级：3+2升大专 or 进入职场实习</div>
-      <div class="tl-desc">通过3+2升大专继续深造 or 直接进入自贡工业企业实习，积累项目经验，月薪3000–5000元起步</div>
-    </div>
-    <div class="tl-item t3">
-      <div class="tl-lbl">第5–8年 · 成长期</div>
-      <div class="tl-title">突破：专业技师 · 薪资翻倍</div>
-      <div class="tl-desc">取得中/高级技师证 → 熟练使用AI辅助工具 → 自动化工程师/IT运维主管 → 月薪6000–12000元</div>
-    </div>
-    <div class="tl-item t4">
-      <div class="tl-lbl">第8年+ · 成熟期</div>
-      <div class="tl-title">突破天花板：技术+管理双通道</div>
-      <div class="tl-desc">技术：高级工程师/首席技师 年薪15–25万 | 管理：班组长→车间主任→工厂总监 年薪20万+</div>
-    </div>
-  </div>
+  <div class="sec-title">✅ 行动计划 · 接下来该怎么做</div>
+  <ol class="plan-list">
+    <li class="plan-item">
+      <div class="plan-num">1</div>
+      <div class="plan-content">
+        <h5>立刻评估当前成绩，确定冲刺目标</h5>
+        <p>做一套近年真题，精准定位每科失分点，确定距430分还差多少，制定科目专项计划。</p>
+      </div>
+    </li>
+    <li class="plan-item">
+      <div class="plan-num">2</div>
+      <div class="plan-content">
+        <h5>优先冲刺普通高中（430分目标）</h5>
+        <p>数学+英语各争取提升20分，语文+综合各提升15分，3–6个月系统复习完全可实现。</p>
+      </div>
+    </li>
+    <li class="plan-item">
+      <div class="plan-num">3</div>
+      <div class="plan-content">
+        <h5>提前了解3–5所职高作为备选</h5>
+        <p>根据自身分数和兴趣，参考本报告中的学校数据，筛选2–3所目标职高，提前了解报名流程。</p>
+      </div>
+    </li>
+    <li class="plan-item">
+      <div class="plan-num">4</div>
+      <div class="plan-content">
+        <h5>职高首选升学实验班</h5>
+        <p>无论选哪所职高，优先报升学实验班（需达对应分数线）。职高→大专这条路，是中专生最可靠的上升通道。</p>
+      </div>
+    </li>
+    <li class="plan-item">
+      <div class="plan-num">5</div>
+      <div class="plan-content">
+        <h5>中考填报志愿时实地考察学校</h5>
+        <p>参加学校开放日，了解实际宿舍、实训设备、师资、就业去向，不要只看宣传材料。实地看才算数。</p>
+      </div>
+    </li>
+    <li class="plan-item">
+      <div class="plan-num">6</div>
+      <div class="plan-content">
+        <h5>以官方招生简章为准</h5>
+        <p>本报告数据仅供参考，最终录取分数线、学费、专业设置以各学校当年正式招生简章为准，填报前务必二次核实。</p>
+      </div>
+    </li>
+  </ol>
 </div>
 
-<!-- ===== SECTION 7: 读书是出路 ===== -->
-<div class="section">
-  <div class="motivation">
-    <h2>读书才是出路，否则未来很容易被取代</h2>
-    <p class="mq">2025年，AI已开始替代大量重复性工作。<strong>蓝领技工、流水线工人、基础文员</strong>……这些岗位正在快速消失。而学习了AI、计算机、工程的本科生，正在成为最被需要的人。<br><strong>现在53分的差距，是普高 vs 职高的分水岭——但绝不是人生的终点。</strong></p>
-    <div class="mot-stats">
-      <div class="mot-stat"><div class="ms-num">3.5x</div><div class="ms-desc">本科生平均薪资<br>是初中毕业的倍数</div></div>
-      <div class="mot-stat"><div class="ms-num">78%</div><div class="ms-desc">AI可取代的工作<br>集中在初中及以下学历</div></div>
-      <div class="mot-stat"><div class="ms-num">53分</div><div class="ms-desc">距最低普高门槛<br>（以350分为例）</div></div>
-      <div class="mot-stat"><div class="ms-num">60天</div><div class="ms-desc">专项冲刺建议周期<br>科学备考可提30–60分</div></div>
-    </div>
-    <ul class="mot-warn">
-      <li>普通工厂流水线岗位：2025–2030年被自动化取代率超60%</li>
-      <li>基础文职/收银员/快递分拣：AI+机器人正在大规模替代</li>
-      <li>不会使用AI工具的从业者：将在下一轮裁员中首先淘汰</li>
-      <li>高中→大学→AI时代工作，是目前最稳健的上升通道</li>
-      <li>如果实在无法冲刺普高，职高要<strong>选AI、计算机、自动化方向</strong>，绝不选纯手工类专业</li>
-    </ul>
-    <div class="mot-quote">"现在多读一本书，多刷一套题，多努力一天，是在给未来的自己买保险。这个时代，学历不是万能的，但没有学历，你的选择会越来越少。冲吧，普高还差那几十分，你完全可以做到。"</div>
-  </div>
+<div class="disclaimer">
+  ⚠️ 免责声明：本报告中分数线数据来源于2025年自贡中考官方公告及微信公众号官方招生简章；薪资数据来源于BOSS直聘、猎聘、职友集2024–2025年自贡地区相关岗位数据，仅供参考，实际薪资因个人能力、企业、岗位不同差异较大。学费、专业设置请以各学校当年正式招生简章为最终依据。本报告不构成志愿填报建议，请结合家庭实际情况理性决策。
 </div>
 
-<!-- ===== SECTION 8: 其他出路 ===== -->
-<div class="section">
-  <h2 class="section-title"><span class="icon">🌈</span>其他选择 · 多元出路</h2>
-  <p class="section-desc">除了普高和职高，还有哪些路可以走？</p>
-  <div class="other-grid">
-    <div class="oc" style="border-top:4px solid #1d4ed8">
-      <div class="oc-icon">🎖️</div>
-      <div class="oc-title">参军入伍</div>
-      <div class="oc-desc">初中毕业可报名，服役2年后退伍，国家给安置补贴，可转业进企事业单位，部分岗位退伍后可上军校。</div>
-      <span class="oc-tag">无分数门槛 · 国家保障</span>
-    </div>
-    <div class="oc" style="border-top:4px solid #059669">
-      <div class="oc-icon">🏋️</div>
-      <div class="oc-title">体育特长生</div>
-      <div class="oc-desc">有体育专长（田径/篮球/足球等）可走特长生通道，文化分降50–80分，进普高更容易，也可走体育大学。</div>
-      <span class="oc-tag">可降分录取 · 双通道</span>
-    </div>
-    <div class="oc" style="border-top:4px solid #7c3aed">
-      <div class="oc-icon">🎨</div>
-      <div class="oc-title">艺术特长生</div>
-      <div class="oc-desc">美术/音乐/舞蹈有特长，艺考文化分要求低，部分院校200多分也能上本科，设计类很吃香。</div>
-      <span class="oc-tag">文化分低 · 艺考本科</span>
-    </div>
-    <div class="oc" style="border-top:4px solid #ea580c">
-      <div class="oc-icon">📱</div>
-      <div class="oc-title">职高+自学编程</div>
-      <div class="oc-desc">职高读计算机方向，课余自学Python/前端/短视频剪辑，利用AI工具放大技能，3年后可达大专同等竞争力。</div>
-      <span class="oc-tag">技能 &gt; 学历的新赛道</span>
-    </div>
-  </div>
-</div>
-
-<!-- ===== SECTION 9: 总结 ===== -->
-<div class="section">
-  <h2 class="section-title"><span class="icon">📋</span>总结 · 行动清单</h2>
-  <p class="section-desc">综合分析完毕，现在该做什么？</p>
-  <div class="sum-wrap">
-    <div class="sum-grid">
-      <div class="sum-item"><div class="si2-icon">🏫</div><div class="si2-title">收录院校</div><div class="si2-val">9所</div></div>
-      <div class="sum-item"><div class="si2-icon">📚</div><div class="si2-title">专业出路分析</div><div class="si2-val">30+个</div></div>
-      <div class="sum-item"><div class="si2-icon">💰</div><div class="si2-title">公办最低学费</div><div class="si2-val">2000元/年</div></div>
-      <div class="sum-item"><div class="si2-icon">🤖</div><div class="si2-title">AI相关专业</div><div class="si2-val">12个</div></div>
-      <div class="sum-item"><div class="si2-icon">📈</div><div class="si2-title">冲刺普高差距</div><div class="si2-val">53分</div></div>
-      <div class="sum-item"><div class="si2-icon">⚡</div><div class="si2-title">冲刺建议周期</div><div class="si2-val">60天</div></div>
-    </div>
-    <div class="action-list">
-      <h4>✅ 你现在应该做的事（按优先级）</h4>
-      <div class="al-item"><div class="al-num">1</div><div><strong>先确认自己的准确分数</strong>——明确距最近普高门槛的差距，判断冲刺可行性</div></div>
-      <div class="al-item"><div class="al-num">2</div><div><strong>如差距≤60分，立即制定60天冲刺计划</strong>——参考本报告每日时间表，严格执行</div></div>
-      <div class="al-item"><div class="al-num">3</div><div><strong>同时准备职高保底方案</strong>——优先：富顺职技/自贡职技/电子信息职校（公办+AI方向）</div></div>
-      <div class="al-item"><div class="al-num">4</div><div><strong>实地走访2–3所学校</strong>——联系招生办，了解专业就业方向和校企合作具体情况</div></div>
-      <div class="al-item"><div class="al-num">5</div><div><strong>关注2025年招生公告</strong>——自贡市教育局官网（www.zg.gov.cn），7月中旬发布志愿填报指南</div></div>
-      <div class="al-item"><div class="al-num">6</div><div><strong>不管选哪条路，都要拥抱AI</strong>——学会用AI工具（文心一言/Copilot/ChatGPT）是2025年最重要的基础技能</div></div>
-    </div>
-  </div>
-</div>
-
-</div><!-- end container -->
-
-<footer>
-  <div>数据来源：自贡市人民政府官网（www.zg.gov.cn）· 2026年招生政策（以官方当年公告为准） · 市场薪资参考自各主流招聘平台（仅供参考）</div>
-  <div>免责声明：具体录取分数线以各学校当年实际公告为准 · 薪资数据因地区和个人能力有差异</div>
-  <div>V5.0 · 生成日期：2026年4月27日 · 适用于2026届自贡中考生</div>
-</footer>
+</div><!-- end .wrap -->
 
 <script>
 var aGoal='all',aType='all',aDist='all';
+
+// 标签切换
 function setupTags(id,setter){
-  document.querySelectorAll('#'+id+' .tag').forEach(t=>{
-    t.addEventListener('click',()=>{
-      document.querySelectorAll('#'+id+' .tag').forEach(x=>x.classList.remove('active'));
-      t.classList.add('active');setter(t.dataset.v);
+  document.querySelectorAll('#'+id+' .tag').forEach(function(t){
+    t.addEventListener('click',function(){
+      document.querySelectorAll('#'+id+' .tag').forEach(function(x){x.classList.remove('active')});
+      t.classList.add('active');
+      setter(t.dataset.v);
     });
   });
 }
-setupTags('goalT',v=>aGoal=v);
-setupTags('typeT',v=>aType=v);
-setupTags('distT',v=>{aDist=v;syncDistMap()});
+setupTags('goalT',function(v){aGoal=v});
+setupTags('typeT',function(v){aType=v});
+setupTags('distT',function(v){aDist=v;syncMap()});
 
-function syncDistMap(){
-  document.querySelectorAll('.dc').forEach(d=>d.classList.remove('sel'));
+// 地图同步
+function syncMap(){
+  document.querySelectorAll('.dc').forEach(function(d){d.classList.remove('sel')});
   if(aDist!='all'){var el=document.getElementById('dc-'+aDist);if(el)el.classList.add('sel');}
 }
+
+// 专业详情展开 - 直接查找.majors-content子元素
 function toggleMajors(btn){
-  btn.classList.toggle('open');
-  var c=btn.nextElementSibling;
-  c.classList.toggle('show');
+  var section = btn.parentElement;
+  var content = section.querySelector('.majors-content');
+  if(!content) return;
+  var isOpen = content.classList.contains('show');
+  content.classList.toggle('show', !isOpen);
+  btn.classList.toggle('open', !isOpen);
 }
-function applyF(){
+
+// 筛选
+function applyFilter(){
   var minS=parseInt(document.getElementById('minS').value)||0;
-  var maxS=parseInt(document.getElementById('maxS').value)||600;
-  var cards=document.querySelectorAll('.sc-card');
+  var maxS=parseInt(document.getElementById('maxS').value)||9999;
+  var cards=document.querySelectorAll('.sch-card');
   var vis=0;
-  cards.forEach(c=>{
+  cards.forEach(function(c){
     var cs=parseInt(c.dataset.score)||0;
     var cg=c.dataset.goal||'';
     var ct=c.dataset.type||'';
     var cd=c.dataset.district||'';
     var show=true;
-    if(cs>0&&maxS<cs)show=false;
+    if(cs>0&&cs<minS)show=false;
+    if(cs>0&&cs>maxS)show=false;
     if(aGoal!='all'&&!cg.includes(aGoal))show=false;
     if(aType!='all'&&ct!==aType)show=false;
     if(aDist!='all'&&cd!==aDist)show=false;
@@ -1623,25 +1441,31 @@ function applyF(){
   });
   document.getElementById('fRes').textContent='找到 '+vis+' 所匹配学校';
 }
-function resetF(){
+
+// 重置
+function resetFilter(){
   document.getElementById('minS').value='';
   document.getElementById('maxS').value='';
-  ['goalT','typeT','distT'].forEach(id=>{
-    document.querySelectorAll('#'+id+' .tag').forEach((t,i)=>t.classList.toggle('active',i===0));
+  ['goalT','typeT','distT'].forEach(function(id){
+    document.querySelectorAll('#'+id+' .tag').forEach(function(t,i){t.classList.toggle('active',i===0)});
   });
   aGoal='all';aType='all';aDist='all';
-  document.querySelectorAll('.sc-card').forEach(c=>c.classList.remove('hidden'));
+  document.querySelectorAll('.sch-card').forEach(function(c){c.classList.remove('hidden')});
   document.getElementById('fRes').textContent='';
-  document.querySelectorAll('.dc').forEach(d=>d.classList.remove('sel'));
+  document.querySelectorAll('.dc').forEach(function(d){d.classList.remove('sel')});
 }
+
+// 地图点击筛选
 function filterDist(d){
-  document.getElementById('sg').scrollIntoView({behavior:'smooth',block:'start'});
-  setTimeout(()=>{
-    document.querySelectorAll('#distT .tag').forEach(t=>t.classList.toggle('active',t.dataset.v===d));
-    aDist=d;syncDistMap();applyF();
-  },600);
+  document.getElementById('schoolGrid').scrollIntoView({behavior:'smooth',block:'start'});
+  setTimeout(function(){
+    document.querySelectorAll('#distT .tag').forEach(function(t){t.classList.toggle('active',t.dataset.v===d)});
+    aDist=d;syncMap();applyFilter();
+  },500);
 }
-document.querySelector('.map-wrap').addEventListener('dblclick',()=>{resetF();document.getElementById('fRes').textContent='已重置全部';});
+
+// 双击地图重置
+document.getElementById('mapGrid').addEventListener('dblclick',function(){resetFilter();document.getElementById('fRes').textContent='已重置';});
 </script>
 </body>
 </html>
